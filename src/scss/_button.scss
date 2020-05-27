@@ -1,0 +1,29 @@
+.btn{
+  height: 95px;
+  line-height: 95px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  background: #FF3D23;
+  padding: 0 60px;
+  transition: .3s;
+  &:after{
+    content: url("/src/img/design/icons/arrow-btn.svg");
+    margin-left: 17px;
+    position: relative;
+    top: 2px;
+    right: 0;
+    transition: .3s;
+  }
+  &:hover{
+    color: #fff;
+    &:after{
+      right: -20px;
+    }
+  }
+}
+
+a.btn{
+  display: inline-flex;
+  text-align: center;
+}

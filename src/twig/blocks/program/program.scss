@@ -1,0 +1,59 @@
+.program{
+  background: url("/src/img/design/bg/program.jpg") top no-repeat #050505;
+  position: relative;
+  overflow: hidden;
+  &:before{
+    content: '';
+    height: 30px;
+    width: 2000px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background: #F5F7F6;
+  }
+  &-content{
+    @include make-col-ready();
+    @include make-col(7);
+    &-item{
+      @include make-col-ready();
+      @include make-col(6);
+      margin-bottom: 50px;
+      display: flex;
+      &__num{
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 1;
+        color: #FF3D23;
+        margin-right: 10px;
+        position: relative;
+        padding-top: 4px;
+        span{
+          display: inline-block;
+          transform: rotate(-90deg);
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          width: 2px;
+          height: 33px;
+          background: #FF3D23;
+          //top: 28px;
+          bottom: 4px;
+          left: 10px;
+        }
+      }
+      &__text{
+        font-size: 19px;
+        line-height: 1.26;
+        color: #FFFFFF;
+      }
+    }
+  }
+  &-thesis{
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 1.42;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+}

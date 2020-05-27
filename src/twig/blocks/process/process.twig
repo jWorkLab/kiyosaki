@@ -1,0 +1,39 @@
+<section class="section process">
+    <div class="container">
+        <h2 class="section-header">
+            <span class="section-header__line section-header__line--left"></span>
+            <!-- /.section-header__line -->
+            НЕМНОГО О ТОМ,<br>
+            КАК БУДЕТ<br>
+            ПРОХОДИТЬ ВЕБИНАР
+        </h2>
+        <!-- /.section-header -->
+        <div class="row">
+            {% set text = [
+                'Интенсив будет проходить в вебинарной комнате. <b>Доступ в комнату — по ссылке</b>',
+                '<b>Последовательный перевод.</b> Языкового барьера точно не будет',
+                'Все <b>дополнительные материалы</b> согласно пакету вышлем на ваш e-mail'
+            ]
+            %}
+            {% for i in range(1, 3) %}
+                <div class="process-item">
+                    <article class="process-card">
+                        <div class="process-card__ico">
+                            <img src="/src/img/design/icons/process/{{i}}.svg" alt="ico">
+                        </div>
+                        <!-- /.process-card__ico -->
+                        <div class="process-card__text">
+                            {{ text[i-1] }}
+                        </div>
+                        <!-- /.process-card__text -->
+                    </article>
+                    <!-- /.process-card -->
+                </div>
+                <!-- /.process-item -->
+            {% endfor %}
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /.section process -->

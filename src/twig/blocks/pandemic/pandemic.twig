@@ -1,0 +1,52 @@
+<section class="section pandemic">
+    <div class="container">
+        <h2 class="section-header">
+            ДА, ПАНДЕМИЯ<br>
+            <span class="section-header__line section-header__line--left"></span>
+            <!-- /.section-header__line -->
+            ИЗМЕНИЛА МИР
+        </h2>
+        <!-- /.section-header -->
+        <div class="row">
+            {% set text = [
+                'Экономики всех стран получили удар ниже пояса',
+                'Сотни компаний и бизнесов в кризисе или разорены',
+                'Тысячи людей лишились работы',
+                'Нет понимания, что делать дальше'
+            ]
+            %}
+            {% for i in range(1, 4) %}
+                <div class="pandemic-item">
+                    <article class="pandemic-card">
+                        <div class="pandemic-card__ico">
+                            <img src="/src/img/design/icons/pandemic/{{i}}.svg" alt="ico">
+                        </div>
+                        <!-- /.pandemic-card__ico -->
+                        <div class="pandemic-card__text">
+                            {{ text[i-1] }}
+                        </div>
+                        <!-- /.pandemic-card__text -->
+                    </article>
+                    <!-- /.pandemic-card -->
+                </div>
+                <!-- /.pandemic-item -->
+            {% endfor %}
+        </div>
+        <!-- /.row -->
+        <div class="row">
+            <div class="pandemic-theses">
+                <span>НО ВЫХОД ЕСТЬ ВСЕГДА.</span><br>
+                РОБЕРТ КИЙОСАКИ<br>
+                В ЭТОМ УВЕРЕН!
+            </div>
+            <!-- /.pandemic-theses -->
+            <div class="pandemic-author">
+                Автор легендарного бестселлера "Богатый папа, бедный папа" докажет вам это и приглашает вас на свой вебинар "Как разбогатеть после пандемии и карантина".
+            </div>
+            <!-- /.pandemic-author -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /.section pandemic -->

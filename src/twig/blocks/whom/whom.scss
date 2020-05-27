@@ -1,0 +1,28 @@
+.whom{
+  &-item{
+    @include make-col-ready();
+    @include make-col(4);
+    margin-bottom: 20px;
+  }
+  &-card{
+    border: 10px solid #FFFFFF;
+    height: 170px;
+    display: flex;
+    padding: 0 30px;
+    &__ico{
+      margin-right: 34px;
+      display: flex;
+      align-items: center;
+      img{
+        min-width: 60px;
+      }
+    }
+    &__text{
+      display: flex;
+      font-size: 19px;
+      line-height: 1.26;
+      color: #2E2928;
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.process{
+  &-item{
+    @include make-col-ready();
+    @include make-col(4);
+    margin-bottom: 20px;
+  }
+  &-card{
+    height: 280px;
+    padding: 40px;
+    background: #F5F6F6;
+    &__ico{
+      margin-bottom: 64px;
+    }
+    &__text{
+      font-size: 19px;
+      line-height: 1.26;
+      color: #2E2928;
+    }
+  }
+}

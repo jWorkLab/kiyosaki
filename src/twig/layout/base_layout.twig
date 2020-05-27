@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% set site_name = 'Kiyosaki' %}
+    <title>{{ site_name }} {% if page_name %} - {% endif %} {{ page_name }}</title>
+    <meta name="description" content="">
+
+    {% set version = '?v=' ~ random() %}
+    <link rel="stylesheet" href="css/assets.css{% if version %}{{ version }}{% endif %}">
+    <link rel="stylesheet" href="css/style.css{% if version %}{{ version }}{% endif %}">
+</head>
+    <body>
+
+        {% include '../common/header/header.twig' %}
+
+        {% block content %}{% endblock %}
+
+        {% include '../common/footer/footer.twig' %}
+
+        {% include '../debug/debug.twig' %}
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/assets.js{% if version %}{{ version }}{% endif %}"></script>
+        <script src="js/main.js{% if version %}{{ version }}{% endif %}"></script>
+
+    </body>
+</html>
+

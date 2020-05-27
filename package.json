@@ -1,0 +1,31 @@
+{
+  "name": "project",
+  "version": "6.0.0",
+  "main": "gulpfile.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-concat": "*",
+    "gulp-csscomb": "*",
+    "gulp-csso": "*",
+    "gulp-html-beautify": "*",
+    "gulp-newer": "*",
+    "gulp-plumber": "*",
+    "gulp-replace": "*",
+    "gulp-rigger": "*",
+    "gulp-sass": "*",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgo": "*",
+    "gulp-tinypng": "*",
+    "gulp-twig": "*",
+    "gulp-uglify": "*",
+    "gulp-watch": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "description": ""
+}

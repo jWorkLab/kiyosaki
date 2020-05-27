@@ -1,0 +1,26 @@
+@if $sticky-footer == true {
+    html {
+        position: relative;
+
+        min-height: 100%;
+    }
+
+    body {
+        margin-bottom: $footer-height;
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 0;
+        }
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+
+        width: 100%;
+        height: $footer-height;
+        @include media-breakpoint-down(sm) {
+            position: relative;
+            height: auto;
+        }
+    }
+}

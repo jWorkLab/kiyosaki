@@ -1,0 +1,42 @@
+<section class="section section--gray whom">
+    <div class="container">
+        <h2 class="section-header">
+            ДЛЯ КОГО<br>
+            <span class="section-header__line section-header__line--left"></span>
+            <!-- /.section-header__line -->
+            РОБЕРТ КИЙОСАКИ<br>
+            ПРОВОДИТ ВЕБИНАР
+        </h2>
+        <!-- /.section-header -->
+        <div class="row">
+            {% set text = [
+                    'Для предпринимателей',
+                    'Для собственников бизнеса',
+                    'Для опытных и начинающих инвесторов',
+                    'Для фрилансеров',
+                    'Для тех, кто думает о пассивном доходе',
+                    'Для всех, кто НЕ хочет зависеть от кризиса'
+                ]
+            %}
+            {% for i in range(1, 6) %}
+                <div class="whom-item">
+                    <article class="whom-card">
+                        <div class="whom-card__ico">
+                            <img src="/src/img/design/icons/whom/{{i}}.svg" alt="ico">
+                        </div>
+                        <!-- /.whom-card__ico -->
+                        <div class="whom-card__text">
+                            {{ text[i-1] }}
+                        </div>
+                        <!-- /.whom-card__text -->
+                    </article>
+                    <!-- /.whom-card -->
+                </div>
+                <!-- /.whom-item -->
+            {% endfor %}
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /.section whom -->

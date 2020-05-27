@@ -1,0 +1,51 @@
+<section class="section section--black program">
+    <div class="container">
+        <h2 class="section-header section-header--white">
+            <span class="section-header__line section-header__line--left"></span>
+            <!-- /.section-header__line -->
+            О ЧЕМ ВЫ УЗНАЕТЕ<br>
+            НА ВЕБИНАРЕ<br>
+            РОБЕРТА КИЙОСАКИ
+        </h2>
+        <!-- /.section-header -->
+        <div class="row">
+            <div class="program-content">
+                <div class="row">
+                    {% set text = [
+                        'Почему время кризиса — это НЕ время хоронить надежды на лучшее будущее',
+                        'Что помогает Роберту Кийосаки всегда выигрывать в период кризиса',
+                        'Как именно мировой кризис помогает стать успешнее и богаче',
+                        'Как изменить мышление и начать наконец действовать, чтобы стать богатым',
+                        'Какие возможности открываются перед предпринимателями сейчас',
+                        'Как правильно инвестировать, чтобы не потерять деньги'
+                    ]
+                    %}
+                    {% for i in range(1, 6) %}
+                        <article class="program-content-item">
+                            <div class="program-content-item__num"> <span>0{{ i }}</span></div>
+                            <!-- /.program-content-item__num -->
+                            <div class="program-content-item__text">
+                                {{ text[i-1] }}
+                            </div>
+                            <!-- /.program-content-item__text -->
+                        </article>
+                        <!-- /.program-content-item -->
+                    {% endfor %}
+                </div>
+                <!-- /.row -->
+                <div class="program-thesis">
+                    ВОЗМОЖНО, ИМЕННО ЭТИХ СОВЕТОВ ВАМ НЕ ХВАТАЛО, ЧТОБЫ СТАТЬ УСПЕШНЫМ, БОГАТЫМ И НИКОГДА НЕ БОЯТЬСЯ КРИЗИСОВ
+                </div>
+                <!-- /.program-thesis -->
+                <a href="#" class="btn">
+                    ОПЛАТИТЬ УЧАСТИЕ В ВЕБИНАРЕ
+                </a>
+                <!-- /.btn -->
+            </div>
+            <!-- /.program-content -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /.section program -->
