@@ -1,6 +1,10 @@
 .theses{
   position: relative;
   padding-bottom: 0;
+  @include media-breakpoint-down(sm) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   &:before{
     content: '';
     height: 30px;
@@ -9,9 +13,21 @@
     bottom: 0;
     left: 0;
     background: #fff;
+    @include media-breakpoint-down(md) {
+      width: 58%;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 40%;
+    }
+    @include media-breakpoint-down(xs) {
+      display: none;
+    }
   }
   .section-header{
     margin-bottom: 45px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 30px;
+    }
   }
   &-slider{
     &-item{
@@ -19,10 +35,10 @@
       &:before{
         content: '';
         width: 194px;
-        height: 194px;
         background: #FFFFFF;
         position: absolute;
         top: 0;
+        bottom: 0;
         left: 0;
         z-index: 0;
       }
@@ -36,6 +52,9 @@
         position: absolute;
         top: -5px;
         left: 19px;
+        @include media-breakpoint-down(sm) {
+          font-size: 160px;
+        }
       }
       &__text{
         font-size: 25px;
@@ -44,6 +63,10 @@
         position: relative;
         z-index: 2;
         padding: 30px 30px 30px 132px;
+        @include media-breakpoint-down(sm) {
+          font-size: 18px;
+          padding: 20px 30px 20px 100px;
+        }
       }
     }
   }
@@ -52,6 +75,14 @@
     display: flex;
     justify-content: flex-end;
     //border: 1px solid #000;
+    @include media-breakpoint-down(xs) {
+      margin-top: 20px;
+    }
+    .owl-control{
+      @include media-breakpoint-down(xs) {
+        width: 100%;
+      }
+    }
   }
   &-pattern{
     position: absolute;

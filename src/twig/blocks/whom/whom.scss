@@ -3,6 +3,10 @@
   overflow: hidden;
   padding-top: 115px;
   //z-index: 1;
+  @include media-breakpoint-down(sm) {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
   &:before{
     content: '';
     height: 30px;
@@ -16,12 +20,22 @@
     @include make-col-ready();
     @include make-col(4);
     margin-bottom: 20px;
+    @include media-breakpoint-down(lg) {
+      @include make-col(6);
+    }
+    @include media-breakpoint-down(sm) {
+      @include make-col(12);
+      margin-bottom: 10px;
+    }
   }
   &-card{
     border: 10px solid #FFFFFF;
     height: 170px;
     display: flex;
     padding: 0 30px;
+    @include media-breakpoint-down(sm) {
+      height: 130px;
+    }
     &__ico{
       margin-right: 34px;
       display: flex;
@@ -36,6 +50,15 @@
       line-height: 1.26;
       color: #2E2928;
       margin: auto;
+      width: 100%;
+      @include media-breakpoint-down(sm) {
+        font-size: 17px;
+      }
+      br{
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+      }
     }
   }
   &-pattern{
@@ -47,6 +70,9 @@
       bottom: -158px;
       left: -50px;
       z-index: 0;
+      @include media-breakpoint-down(sm) {
+        bottom: -165px;
+      }
     }
   }
 }

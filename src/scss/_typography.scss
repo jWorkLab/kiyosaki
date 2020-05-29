@@ -4,6 +4,12 @@
   text-transform: uppercase;
   color: #2E2928;
   margin-bottom: 25px;
+  @include media-breakpoint-down(lg) {
+    font-size: 50px;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 30px;
+  }
   &--white{
     color: #FFFFFF;
   }
@@ -14,6 +20,13 @@
     background: #FF3D23;
     position: relative;
     top: -18px;
+    @include media-breakpoint-down(lg) {
+      top: -13px;
+    }
+    @include media-breakpoint-down(sm) {
+      height: 4px;
+      top: -9px;
+    }
     &--left{
       margin-left: -35px;
       margin-right: 10px;

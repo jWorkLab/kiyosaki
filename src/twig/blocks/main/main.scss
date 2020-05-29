@@ -18,10 +18,16 @@
         line-height: 1.37;
         color: #2E2928;
         margin-bottom: 10px;
+        @include media-breakpoint-down(lg) {
+          font-size: 30px;
+        }
         .section-header__line{
           width: 170px;
           top: -7px;
           margin-left: 10px;
+          @include media-breakpoint-down(lg) {
+            top: -4px
+          }
         }
       }
       &__theses{
@@ -31,6 +37,9 @@
         line-height: 1.23;
         text-transform: uppercase;
         color: #2E2928;
+        @include media-breakpoint-down(lg) {
+          font-size: 50px;
+        }
       }
     }
   }
@@ -44,6 +53,9 @@
       }
     }
     &-description{
+      @include media-breakpoint-down(lg) {
+        margin-left: -50px;
+      }
       &__text{
         font-size: 23px;
         line-height: 1.39;
@@ -56,6 +68,9 @@
     position: absolute;
     right: -150px;
     top: 200px;
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
     &__text{
       font-weight: 700;
       font-size: 70px;

@@ -2,6 +2,8 @@
   display: inline-flex;
   background: #fff;
   padding: 30px 45px;
+  width: 530px;
+  //border: 1px solid #000;
   &-counter{
     @include media-breakpoint-down(sm) {
       flex-wrap: wrap;

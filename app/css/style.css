@@ -4106,6 +4106,16 @@ p {
 
     color: #2e2928;
 }
+@media (max-width: 1199.98px) {
+    .section-header {
+        font-size: 50px;
+    }
+}
+@media (max-width: 767.98px) {
+    .section-header {
+        font-size: 30px;
+    }
+}
 .section-header--white {
     color: #fff;
 }
@@ -4119,6 +4129,18 @@ p {
     height: 7px;
 
     background: #ff3d23;
+}
+@media (max-width: 1199.98px) {
+    .section-header__line {
+        top: -13px;
+    }
+}
+@media (max-width: 767.98px) {
+    .section-header__line {
+        top: -9px; 
+
+        height: 4px;
+    }
 }
 .section-header__line--left {
     margin-right: 10px; 
@@ -4182,6 +4204,11 @@ a:hover {
     padding: 80px 0; 
 
     background: #fff;
+}
+@media (max-width: 1900px) {
+    .section {
+        overflow: hidden;
+    }
 }
 .section--gray {
     background: #f5f7f6;
@@ -4840,11 +4867,21 @@ a.btn {
 
     color: #2e2928;
 }
+@media (max-width: 1199.98px) {
+    .main-text-title__author {
+        font-size: 30px;
+    }
+}
 .main-text-title__author .section-header__line {
     top: -7px;
 
     width: 170px;
     margin-left: 10px;
+}
+@media (max-width: 1199.98px) {
+    .main-text-title__author .section-header__line {
+        top: -4px;
+    }
 }
 .main-text-title__theses {
     font-size: 71px;
@@ -4857,6 +4894,11 @@ a.btn {
 
     color: #2e2928;
 }
+@media (max-width: 1199.98px) {
+    .main-text-title__theses {
+        font-size: 50px;
+    }
+}
 .main-book {
     display: flex;
 
@@ -4867,6 +4909,11 @@ a.btn {
 }
 .main-book-img img {
     opacity: 0;
+}
+@media (max-width: 1199.98px) {
+    .main-book-description {
+        margin-left: -50px;
+    }
 }
 .main-book-description__text {
     font-size: 23px;
@@ -4880,6 +4927,11 @@ a.btn {
     position: absolute;
     top: 200px; 
     right: -150px;
+}
+@media (max-width: 1199.98px) {
+    .main-online {
+        display: none;
+    }
 }
 .main-online__text {
     font-size: 70px;
@@ -5139,6 +5191,12 @@ a.btn {
 
     padding-top: 70px;
 }
+@media (max-width: 767.98px) {
+    .process {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
 .process-item {
     position: relative;
 
@@ -5150,20 +5208,58 @@ a.btn {
 
     flex: 0 0 33.33333%;
 }
+@media (max-width: 767.98px) {
+    .process-item {
+        max-width: 100%;
+        margin-bottom: 10px; 
+
+        flex: 0 0 100%;
+    }
+}
 .process-card {
     height: 280px;
     padding: 40px;
 
     background: #f5f6f6;
 }
+@media (max-width: 991.98px) {
+    .process-card {
+        height: 300px;
+        padding: 20px;
+    }
+}
+@media (max-width: 767.98px) {
+    .process-card {
+        display: flex; 
+
+        height: auto;
+        padding: 30px;
+    }
+}
 .process-card__ico {
     margin-bottom: 64px;
+}
+@media (max-width: 1199.98px) {
+    .process-card__ico {
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 767.98px) {
+    .process-card__ico {
+        margin-right: 25px; 
+        margin-bottom: 0;
+    }
 }
 .process-card__text {
     font-size: 19px;
     line-height: 1.32;
 
     color: #2e2928;
+}
+@media (max-width: 1199.98px) {
+    .process-card__text {
+        font-size: 18px;
+    }
 }
 .process-pattern {
     position: absolute;
@@ -5188,6 +5284,12 @@ a.btn {
 
     padding-bottom: 0;
 }
+@media (max-width: 767.98px) {
+    .theses {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
 .theses:before {
     position: absolute;
     bottom: 0;
@@ -5200,8 +5302,28 @@ a.btn {
 
     background: #fff;
 }
+@media (max-width: 991.98px) {
+    .theses:before {
+        width: 58%;
+    }
+}
+@media (max-width: 767.98px) {
+    .theses:before {
+        width: 40%;
+    }
+}
+@media (max-width: 575.98px) {
+    .theses:before {
+        display: none;
+    }
+}
 .theses .section-header {
     margin-bottom: 45px;
+}
+@media (max-width: 767.98px) {
+    .theses .section-header {
+        margin-bottom: 30px;
+    }
 }
 .theses-slider-item {
     position: relative;
@@ -5210,10 +5332,10 @@ a.btn {
     position: absolute;
     z-index: 0; 
     top: 0;
+    bottom: 0;
     left: 0;
 
     width: 194px;
-    height: 194px;
 
     content: '';
 
@@ -5232,6 +5354,11 @@ a.btn {
 
     color: #ff3d23;
 }
+@media (max-width: 767.98px) {
+    .theses-slider-item:after {
+        font-size: 160px;
+    }
+}
 .theses-slider-item__text {
     font-size: 25px;
     line-height: 1.32;
@@ -5243,12 +5370,29 @@ a.btn {
 
     color: #000;
 }
+@media (max-width: 767.98px) {
+    .theses-slider-item__text {
+        font-size: 18px;
+
+        padding: 20px 30px 20px 100px;
+    }
+}
 .theses-slider-control {
     display: flex;
 
     margin-top: 64px;
 
     justify-content: flex-end;
+}
+@media (max-width: 575.98px) {
+    .theses-slider-control {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 575.98px) {
+    .theses-slider-control .owl-control {
+        width: 100%;
+    }
 }
 .theses-pattern {
     position: absolute;
@@ -5572,7 +5716,7 @@ a.btn {
 .program-counter:before {
     position: absolute;
     top: 0;
-    left: 510px; 
+    left: 500px; 
 
     width: 1000px;
     height: 100%;
@@ -5623,6 +5767,12 @@ a.btn {
 
     padding-top: 115px;
 }
+@media (max-width: 767.98px) {
+    .whom {
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+}
 .whom:before {
     position: absolute;
     top: 0;
@@ -5646,6 +5796,21 @@ a.btn {
 
     flex: 0 0 33.33333%;
 }
+@media (max-width: 1199.98px) {
+    .whom-item {
+        max-width: 50%; 
+
+        flex: 0 0 50%;
+    }
+}
+@media (max-width: 767.98px) {
+    .whom-item {
+        max-width: 100%;
+        margin-bottom: 10px; 
+
+        flex: 0 0 100%;
+    }
+}
 .whom-card {
     display: flex;
 
@@ -5653,6 +5818,11 @@ a.btn {
     padding: 0 30px; 
 
     border: 10px solid #fff;
+}
+@media (max-width: 767.98px) {
+    .whom-card {
+        height: 130px;
+    }
 }
 .whom-card__ico {
     display: flex;
@@ -5670,9 +5840,20 @@ a.btn {
 
     display: flex;
 
-    margin: auto; 
+    width: 100%; 
+    margin: auto;
 
     color: #2e2928;
+}
+@media (max-width: 767.98px) {
+    .whom-card__text {
+        font-size: 17px;
+    }
+}
+@media (max-width: 991.98px) {
+    .whom-card__text br {
+        display: none;
+    }
 }
 .whom-pattern {
     position: relative;
@@ -5686,9 +5867,20 @@ a.btn {
 
     content: url('../img/design/elements/pattern-whom.svg');
 }
+@media (max-width: 767.98px) {
+    .whom-pattern:before {
+        bottom: -165px;
+    }
+}
 
 .pandemic {
     overflow: hidden;
+}
+@media (max-width: 767.98px) {
+    .pandemic {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 .pandemic-item {
     position: relative;
@@ -5701,20 +5893,79 @@ a.btn {
 
     flex: 0 0 25%;
 }
+@media (max-width: 991.98px) {
+    .pandemic-item {
+        max-width: 50%;
+        margin-bottom: 20px; 
+
+        flex: 0 0 50%;
+    }
+}
+@media (max-width: 575.98px) {
+    .pandemic-item {
+        max-width: 100%;
+        margin-bottom: 10px; 
+
+        flex: 0 0 100%;
+    }
+}
 .pandemic-card {
     height: 280px;
     padding: 30px;
 
     background: #f5f6f6;
 }
+@media (max-width: 991.98px) {
+    .pandemic-card {
+        height: 200px;
+    }
+}
+@media (max-width: 767.98px) {
+    .pandemic-card {
+        height: 220px;
+    }
+}
+@media (max-width: 575.98px) {
+    .pandemic-card {
+        display: flex; 
+
+        height: auto;
+    }
+}
 .pandemic-card__ico {
     margin-bottom: 86px;
+}
+@media (max-width: 1199.98px) {
+    .pandemic-card__ico {
+        margin-bottom: 70px;
+    }
+}
+@media (max-width: 991.98px) {
+    .pandemic-card__ico {
+        margin-bottom: 35px;
+    }
+}
+@media (max-width: 575.98px) {
+    .pandemic-card__ico {
+        margin-right: 25px; 
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 575.98px) {
+    .pandemic-card__ico img {
+        width: 64px;
+    }
 }
 .pandemic-card__text {
     font-size: 19px;
     line-height: 1.3;
 
     color: #2e2928;
+}
+@media (max-width: 1199.98px) {
+    .pandemic-card__text {
+        font-size: 17px;
+    }
 }
 .pandemic-theses {
     font-size: 40px;
@@ -5733,6 +5984,19 @@ a.btn {
     color: #2e2928; 
 
     flex: 0 0 50%;
+}
+@media (max-width: 767.98px) {
+    .pandemic-theses {
+        max-width: 100%;
+        margin-bottom: 7px; 
+
+        flex: 0 0 100%;
+    }
+}
+@media (max-width: 767.98px) {
+    .pandemic-theses {
+        font-size: 24px;
+    }
 }
 .pandemic-theses span {
     color: #ff3d23;
@@ -5755,6 +6019,20 @@ a.btn {
 
     flex: 0 0 50%;
 }
+@media (max-width: 767.98px) {
+    .pandemic-author {
+        max-width: 100%; 
+
+        flex: 0 0 100%;
+    }
+}
+@media (max-width: 767.98px) {
+    .pandemic-author {
+        font-size: 17px;
+
+        margin-bottom: 0;
+    }
+}
 .pandemic-pattern:before {
     position: absolute;
     top: -73px;
@@ -5766,7 +6044,8 @@ a.btn {
 .counter {
     display: inline-flex;
 
-    padding: 30px 45px; 
+    width: 530px; 
+    padding: 30px 45px;
 
     background: #fff;
 }
