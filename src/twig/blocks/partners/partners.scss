@@ -1,6 +1,9 @@
 .partners{
   padding-bottom: 0;
   position: relative;
+  @include media-breakpoint-down(sm) {
+    padding-top: 0px;
+  }
   &-slider{
     &__item{
       line-height: 103px;

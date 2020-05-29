@@ -1,10 +1,21 @@
 .invite{
-  padding-top: 65px;
+  padding-top: 10px;
   padding-bottom: 25px;
+  @include media-breakpoint-down(lg) {
+    margin-top: -50px;
+  }
+  @include media-breakpoint-down(xs) {
+    margin-top: -100px;
+  }
   &-video{
     height: 590px;
     background: url("/src/img/design/bg/invite.jpg") top no-repeat;
+    background-size: cover;
     display: flex;
+    @include media-breakpoint-down(xs) {
+      height: 350px;
+
+    }
     &__play{
       margin: auto;
       width: 124px;
@@ -22,7 +33,28 @@
     justify-content: space-between;
     padding: 0 40px;
     margin-top: -60px;
-    &-btn{}
-    &-counter{}
+    @include media-breakpoint-down(md) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 0;
+      margin-top: 0;
+    }
+    &-btn{
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+      .btn{
+        @include media-breakpoint-down(xs) {
+          width: 100%;
+        }
+      }
+    }
+    &-counter{
+      @include media-breakpoint-down(xs) {
+        width: 100%;
+      }
+    }
   }
 }

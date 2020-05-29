@@ -61,8 +61,12 @@
   &-theses{
     @include make-col-ready();
     @include make-col(6);
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       @include make-col(12);
+      margin-bottom: 12px;
+    }
+    @include media-breakpoint-down(sm) {
+      //@include make-col(12);
       margin-bottom: 7px;
     }
     font-weight: 700;
@@ -72,6 +76,7 @@
     color: #2E2928;
     @include media-breakpoint-down(sm) {
       font-size: 24px;
+      margin-top: 10px;
     }
     span{
       color: #FF3D23;
@@ -80,6 +85,9 @@
   &-author{
     @include make-col-ready();
     @include make-col(6);
+    @include media-breakpoint-down(md) {
+      @include make-col(12);
+    }
     @include media-breakpoint-down(sm) {
       @include make-col(12);
     }

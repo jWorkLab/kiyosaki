@@ -10,6 +10,9 @@
     padding: 10px 20px 0;
     width: 100%;
   }
+  @include media-breakpoint-down(xs) {
+    padding: 10px 10px 0;
+  }
   &-counter{
     @include media-breakpoint-down(sm) {
       flex-wrap: wrap;

@@ -51,10 +51,11 @@ $(document).ready(function(){
         navText: false,
         responsive : {
             0 : {
-                items: 1
+                items: 3,
+                center:true
             },
             576 : {
-                items: 2
+                items: 3
             },
             992 : {
                 items: 5
