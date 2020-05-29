@@ -30,6 +30,10 @@
         position: absolute;
         top: 400px;
         left: -200px;
+        @include media-breakpoint-down(sm) {
+          left: -230px;
+          top: 200px
+        }
       }
     }
   }

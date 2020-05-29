@@ -12,6 +12,8 @@
   }
   @include media-breakpoint-down(xs) {
     padding: 10px 10px 0;
+    display: flex;
+    justify-content: center;
   }
   &-counter{
     @include media-breakpoint-down(sm) {

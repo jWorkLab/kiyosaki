@@ -29,6 +29,30 @@
       line-height: 1.35;
       color: #1c1c1f;
       font-size: 16px;
+      @include media-breakpoint-down(sm) {
+        padding-left: 33px;
+        font-size: 15px;
+        //color: #fff;
+        line-height: 1.1;
+        //width: 50%;
+        //border: 1px solid #000;
+      }
+      &:last-of-type{
+        @include media-breakpoint-down(sm) {
+          padding-right: 20px;
+        }
+      }
+      &__desktop{
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+      }
+      &__mobile{
+        display: none;
+        @include media-breakpoint-down(md) {
+          display: block;
+        }
+      }
       b{
         font-weight: 700;
         @include media-breakpoint-down(sm) {
@@ -63,6 +87,9 @@
       &:first-of-type{
         &:before{
           content: url("/src/img/design/icons/map-pin.svg");
+          @include media-breakpoint-down(sm) {
+            content: url("/src/img/design/icons/map-pin-xs.svg");
+          }
         }
       }
       &:last-of-type{
@@ -72,6 +99,9 @@
         }
         &:before{
           content: url("/src/img/design/icons/calendar.svg");
+          @include media-breakpoint-down(sm) {
+            content: url("/src/img/design/icons/calendar-xs.svg");
+          }
         }
       }
       &__title{
@@ -109,6 +139,7 @@
       }
       @include media-breakpoint-down(sm) {
         margin-bottom: 8px;
+        text-align: left;
       }
       &__link{
         margin-bottom: -6px;
@@ -143,13 +174,14 @@
     @include make-col-ready();
     @include make-col(2);
     @include media-breakpoint-down(sm) {
-      @include make-col(6);
+      @include make-col(12);
       display: flex;
       order: 1;
     }
     //margin-top: 50px;
     @include media-breakpoint-down(sm) {
-      margin-top: 30px;
+      margin-top: 15px;
+      flex-wrap: wrap;
     }
     &__title{
       font-weight: 300;
@@ -160,6 +192,8 @@
       @include media-breakpoint-down(sm) {
         padding-top: 15px;
         padding-right: 15px;
+        width: 100%;
+        text-align: center;
       }
       br{
         @include media-breakpoint-down(sm) {
@@ -168,6 +202,10 @@
       }
     }
     &__logo{
+      @include media-breakpoint-down(sm) {
+        text-align: center;
+        width: 100%;
+      }
       img{
         position: relative;
         left: -19px;
@@ -219,5 +257,8 @@
     margin: 35px 0;
     height: 1px;
     background:  rgba(196, 196, 196, 0.2);
+    @include media-breakpoint-down(sm) {
+      margin: 15px 0 0;
+    }
   }
 }

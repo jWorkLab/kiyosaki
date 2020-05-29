@@ -4710,6 +4710,32 @@ a.btn-small {
 
     color: #1c1c1f;
 }
+@media (max-width: 767.98px) {
+    .footer-info-item {
+        font-size: 15px;
+        line-height: 1.1; 
+
+        padding-left: 33px;
+    }
+}
+@media (max-width: 767.98px) {
+    .footer-info-item:last-of-type {
+        padding-right: 20px;
+    }
+}
+@media (max-width: 991.98px) {
+    .footer-info-item__desktop {
+        display: none;
+    }
+}
+.footer-info-item__mobile {
+    display: none;
+}
+@media (max-width: 991.98px) {
+    .footer-info-item__mobile {
+        display: block;
+    }
+}
 .footer-info-item b {
     font-weight: 700;
 }
@@ -4755,6 +4781,11 @@ a.btn-small {
 .footer-info-item:first-of-type:before {
     content: url('../img/design/icons/map-pin.svg');
 }
+@media (max-width: 767.98px) {
+    .footer-info-item:first-of-type:before {
+        content: url('../img/design/icons/map-pin-xs.svg');
+    }
+}
 .footer-info-item:last-of-type {
     margin-right: 0;
 }
@@ -4765,6 +4796,11 @@ a.btn-small {
 }
 .footer-info-item:last-of-type:before {
     content: url('../img/design/icons/calendar.svg');
+}
+@media (max-width: 767.98px) {
+    .footer-info-item:last-of-type:before {
+        content: url('../img/design/icons/calendar-xs.svg');
+    }
 }
 .footer-info-item__title {
     font-size: 16px;
@@ -4818,6 +4854,8 @@ a.btn-small {
 @media (max-width: 767.98px) {
     .footer-contact-phone {
         margin-bottom: 8px;
+
+        text-align: left;
     }
 }
 .footer-contact-phone__link {
@@ -4871,15 +4909,17 @@ a.btn-small {
     .footer-brand {
         display: flex;
 
-        max-width: 50%;
+        max-width: 100%;
 
-        flex: 0 0 50%;
+        flex: 0 0 100%;
         order: 1;
     }
 }
 @media (max-width: 767.98px) {
     .footer-brand {
-        margin-top: 30px;
+        margin-top: 15px;
+
+        flex-wrap: wrap;
     }
 }
 .footer-brand__title {
@@ -4893,13 +4933,23 @@ a.btn-small {
 }
 @media (max-width: 767.98px) {
     .footer-brand__title {
+        width: 100%;
         padding-top: 15px;
         padding-right: 15px;
+
+        text-align: center;
     }
 }
 @media (max-width: 767.98px) {
     .footer-brand__title br {
         display: none;
+    }
+}
+@media (max-width: 767.98px) {
+    .footer-brand__logo {
+        width: 100%; 
+
+        text-align: center;
     }
 }
 .footer-brand__logo img {
@@ -4973,6 +5023,11 @@ a.btn-small {
     margin: 35px 0;
 
     background: rgba(196, 196, 196, .2);
+}
+@media (max-width: 767.98px) {
+    .footer-divider {
+        margin: 15px 0 0;
+    }
 }
 
 .main {
@@ -5307,6 +5362,12 @@ a.btn-small {
     left: -200px; 
 
     content: url('../img/design/elements/pattern-partners.svg');
+}
+@media (max-width: 767.98px) {
+    .partners-pattern-img:before {
+        top: 200px; 
+        left: -230px;
+    }
 }
 
 .tariff {
@@ -6598,7 +6659,11 @@ a.btn-small {
 }
 @media (max-width: 575.98px) {
     .counter {
+        display: flex;
+
         padding: 10px 10px 0;
+
+        justify-content: center;
     }
 }
 @media (max-width: 767.98px) {
