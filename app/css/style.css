@@ -5957,6 +5957,12 @@ a.btn-small {
 
     padding-bottom: 0;
 }
+@media (max-width: 767.98px) {
+    .about {
+        margin-top: -1px; 
+        padding-top: 30px;
+    }
+}
 .about-image {
     position: relative;
     position: relative; 
