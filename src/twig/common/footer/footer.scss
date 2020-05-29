@@ -129,6 +129,12 @@
       justify-content: space-between;
       margin-top: -3px;
     }
+    &-callme{
+      display: none;
+      @include media-breakpoint-down(md) {
+        display: block;
+      }
+    }
     &-phone{
       padding-top: 8px;
       @include media-breakpoint-down(md) {

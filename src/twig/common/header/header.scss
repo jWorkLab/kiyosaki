@@ -138,6 +138,12 @@
       justify-content: space-between;
       margin-top: -3px;
     }
+    &-callme{
+      display: none;
+      @include media-breakpoint-down(sm) {
+        display: block;
+      }
+    }
     &-phone{
       padding-top: 11px;
       @include media-breakpoint-down(md) {
@@ -176,7 +182,7 @@
       }
       &__title{
         opacity: 0.3;
-        color: #fff;
+        color: #000;
         font-size: 16px;
         text-align: right;
         @include media-breakpoint-down(md) {
@@ -184,6 +190,7 @@
         }
         @include media-breakpoint-down(sm) {
           font-size: 14px;
+          color: #fff;
         }
       }
     }
