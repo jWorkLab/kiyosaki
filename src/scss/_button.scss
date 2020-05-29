@@ -8,10 +8,10 @@
   padding: 0 60px;
   transition: .3s;
   &:after{
-    content: url("/src/img/design/icons/arrow-btn.svg");
+    content: url("/src/img/design/icons/arrow-next.svg");
     margin-left: 17px;
     position: relative;
-    top: 2px;
+    top: 6px;
     right: 0;
     transition: .3s;
   }
@@ -25,5 +25,6 @@
 
 a.btn{
   display: inline-flex;
+  justify-content: center;
   text-align: center;
 }

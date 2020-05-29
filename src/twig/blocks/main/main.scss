@@ -1,1 +1,118 @@
-.main{}
+.main{
+  //height: 837px;
+  //min-height: 837px;
+  background: url("/src/img/design/bg/main.jpg") top no-repeat;
+  overflow: hidden;
+  .container-main{
+    height: 731px;
+  }
+  &-text{
+    @include make-col-ready();
+    @include make-col(9);
+    &-title{
+      margin-bottom: 32px;
+      &__author{
+        display: inline-block;
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 1.37;
+        color: #2E2928;
+        margin-bottom: 10px;
+        .section-header__line{
+          width: 170px;
+          top: -7px;
+          margin-left: 10px;
+        }
+      }
+      &__theses{
+        display: block;
+        font-weight: 700;
+        font-size: 71px;
+        line-height: 1.23;
+        text-transform: uppercase;
+        color: #2E2928;
+      }
+    }
+  }
+  &-book{
+    display: flex;
+    margin-left: -160px;
+    &-img{
+      margin-top: -5px;
+      img{
+        opacity: 0;
+      }
+    }
+    &-description{
+      &__text{
+        font-size: 23px;
+        line-height: 1.39;
+        color: #2E2928;
+        margin-bottom: 42px;
+      }
+    }
+  }
+  &-online{
+    position: absolute;
+    right: -150px;
+    top: 200px;
+    &__text{
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 1;
+      color: #FFFFFF;
+      //mix-blend-mode: normal;
+      transform: rotate(-90deg);
+    }
+    &:before{
+      content: '';
+      width: 12px;
+      height: 12px;
+      background: #FFFFFF;
+      border-radius: 50%;
+      position: absolute;
+      top: -100px;
+      right: 90px;
+    }
+    &:after{
+      content: '';
+      width: 2px;
+      height: 120px;
+      background: #FFFFFF;
+      border-radius: 50%;
+      position: absolute;
+      top: -218px;
+      right: 95px;
+    }
+  }
+  &-counter{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    &:before{
+      content: '';
+      height: 100%;
+      width: 1000px;
+      background: #fff;
+      position: absolute;
+      top: 0;
+      left: 510px;
+      //border: 1px solid #000;
+    }
+    &:after{
+      content: url("/src/img/design/elements/pattern-pandemic-2.svg");
+      position: absolute;
+      bottom: -35px;
+      right: -325px;
+    }
+  }
+}
+
+.main-desktop-book{
+  height: 0;
+  img{
+    position: absolute;
+    top: -370px;
+    left: -150px;
+  }
+}

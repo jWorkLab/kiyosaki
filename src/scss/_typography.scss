@@ -1,9 +1,9 @@
 .section-header{
   font-size: 64px;
-  line-height: 1.36;
+  line-height: 1.20;
   text-transform: uppercase;
   color: #2E2928;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   &--white{
     color: #FFFFFF;
   }
@@ -18,6 +18,26 @@
       margin-left: -35px;
       margin-right: 10px;
     }
-    &--right{}
+    &--right{
+      margin-left: 10px;
+    }
+    &--no-margin-left{
+      margin-left: 0;
+    }
+    &--main{
+      width: 90px;
+    }
+    &--medium{
+      width: 126px;
+    }
+    &--long{
+      width: 224px;
+    }
+  }
+  &__indent{
+    display: inline-block;
+    padding-right: 10px;
+    //height: 1px;
+    //border: 1px solid #000;
   }
 }

@@ -1,1 +1,28 @@
-.invite{}
+.invite{
+  padding-top: 65px;
+  padding-bottom: 25px;
+  &-video{
+    height: 590px;
+    background: url("/src/img/design/bg/invite.jpg") top no-repeat;
+    display: flex;
+    &__play{
+      margin: auto;
+      width: 124px;
+      height: 124px;
+      background: url("/src/img/design/icons/play.svg") center no-repeat;
+      cursor: pointer;
+      transition: .3s;
+      &:hover{
+        transform: scale(1.2);
+      }
+    }
+  }
+  &-action{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin-top: -60px;
+    &-btn{}
+    &-counter{}
+  }
+}

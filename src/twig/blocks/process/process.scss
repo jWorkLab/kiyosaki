@@ -1,4 +1,6 @@
 .process{
+  padding-top: 70px;
+  position: relative;
   &-item{
     @include make-col-ready();
     @include make-col(4);
@@ -13,8 +15,23 @@
     }
     &__text{
       font-size: 19px;
-      line-height: 1.26;
+      line-height: 1.32;
       color: #2E2928;
+    }
+  }
+  &-pattern{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &-img{
+      position: relative;
+      &:before{
+        content: url("/src/img/design/elements/pattern-process.svg");
+        position: absolute;
+        top: 175px;
+        right: -137px;
+      }
     }
   }
 }

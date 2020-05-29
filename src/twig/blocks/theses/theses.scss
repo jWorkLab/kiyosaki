@@ -1,1 +1,71 @@
-.theses{}
+.theses{
+  position: relative;
+  padding-bottom: 0;
+  &:before{
+    content: '';
+    height: 30px;
+    width: 65%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+  }
+  .section-header{
+    margin-bottom: 45px;
+  }
+  &-slider{
+    &-item{
+      position: relative;
+      &:before{
+        content: '';
+        width: 194px;
+        height: 194px;
+        background: #FFFFFF;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+      }
+      &:after{
+        content: '“';
+        //font-family: 'bebas', sans-serif;
+        font-size: 210px;
+        line-height: 1;
+        color: #FF3D23;
+        z-index: 1;
+        position: absolute;
+        top: -5px;
+        left: 19px;
+      }
+      &__text{
+        font-size: 25px;
+        line-height: 1.32;
+        color: #000000;
+        position: relative;
+        z-index: 2;
+        padding: 30px 30px 30px 132px;
+      }
+    }
+  }
+  &-slider-control{
+    margin-top: 64px;
+    display: flex;
+    justify-content: flex-end;
+    //border: 1px solid #000;
+  }
+  &-pattern{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    &-img{
+      position: relative;
+      &:before{
+        content: url("/src/img/design/elements/pattern-theses.svg");
+        position: absolute;
+        bottom: -55px;
+        left: -307px;
+      }
+    }
+  }
+}

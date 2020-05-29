@@ -1,7 +1,77 @@
 <main class="main">
-    <div class="container">
+    {% include '../../common/header/header.twig' %}
+    <div class="container container-main">
+        <div class="row">
+            <div class="main-text">
+                <h1 class="main-text-title">
+                    <span class="main-text-title__author">
+                        Роберт Кийосаки
+                        <span class="section-header__line"></span>
+                        <!-- /.section-header__line -->
+                    </span>
+                    <!-- /.main-text-title__author -->
+                    <span class="main-text-title__theses">
+                        Как разбогатеть<br>
+                        <span class="section-header__line section-header__line--left section-header__line--no-margin-left section-header__line--main"></span>
+                        <!-- /.section-header__line -->
+                        после пандемии<br>
+                        <span class="section-header__indent"></span>
+                        <!-- /.section-header__ident -->
+                        и карантина
+                    </span>
+                    <!-- /.main-text-title__theses -->
+                </h1>
+                <!-- /.main-text-title -->
+                <div class="main-book">
+                    <div class="main-book-img">
+                        <img src="/src/img/design/images/book.png" alt="img">
+                    </div>
+                    <!-- /.main-book-img -->
+                    <div class="main-book-description">
+                        <div class="main-book-description__text">
+                            <b>Вебинар от автора бестселлера<br>
+                            "Богатый папа, бедный папа"</b> — книги,<br>
+                            которая изменила жизнь сотен тысяч<br>
+                            людей во всем мире
+                        </div>
+                        <!-- /.main-book-description__text -->
+                        <a href="#" class="btn">
+                            ОПЛАТИТЬ УЧАСТИЕ
+                        </a>
+                        <!-- /.btn -->
+                    </div>
+                    <!-- /.main-book-description -->
+                </div>
+                <!-- /.main-book -->
+                <div class="main-text__action">
 
+                </div>
+                <!-- /.main-text__action -->
+            </div>
+            <!-- /.main-text -->
+        </div>
+        <!-- /.row -->
+        <div class="main-online">
+            <div class="main-online__text">
+                online
+            </div>
+            <!-- /.main-online__text -->
+        </div>
+        <!-- /.main-online -->
+        <div class="main-counter">
+            {% set text = '<b>Пока думаете?</b> Учтите, что стоимость<br> участия поднимется через:' %}
+            {% include '../../blocks/counter/counter.twig' %}
+        </div>
+        <!-- /.main-counter -->
     </div>
     <!-- /.container -->
 </main>
 <!-- /.main -->
+
+<div class="main-desktop-book">
+    <div class="container">
+        <img src="/src/img/design/images/book.png" alt="img">
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.main-desktop-book -->

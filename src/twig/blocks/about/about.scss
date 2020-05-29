@@ -1,1 +1,132 @@
-.about{}
+.about{
+  padding-bottom: 0;
+  position: relative;
+  &-image{
+    @include make-col-ready();
+    @include make-col(6);
+    position: relative;
+    &:before{
+      content: url("/src/img/design/elements/pattern-simple.svg");
+      position: absolute;
+      left: -19px;
+      bottom: -18px;
+      z-index: 0;
+    }
+    img{
+      max-width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  &-content{
+    @include make-col-ready();
+    @include make-col(6);
+    margin-top: -8px;
+    //padding-top: 15px;
+    &__title{
+      font-weight: 300;
+      font-size: 26px;
+      line-height: 1.23;
+      color: #2E2928;
+      margin-bottom: 28px;
+    }
+    &__list{
+      margin-bottom: 46px;
+      position: relative;
+      z-index: 1;
+      ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+          font-weight: 300;
+          font-size: 19px;
+          line-height: 1.32;
+          color: #2E2928;
+          position: relative;
+          padding-left: 19px;
+          margin-bottom: 20px;
+          &:last-of-type{
+            margin-bottom: 0;
+          }
+          &:before{
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 4px;
+            width: 5px;
+            height: 5px;
+            background: #FF3D23;
+          }
+        }
+      }
+    }
+    &-books{
+      position: relative;
+      &:after{
+        content: url("/src/img/design/images/books.png");
+        position: absolute;
+        top: -90px;
+        left: 10px;
+        z-index: 0;
+      }
+      &__title{
+        font-weight: bold;
+        font-size: 26px;
+        line-height: .96;
+        color: #2E2928;
+        margin-bottom: 20px;
+        position: relative;z-index: 1;
+      }
+      &-list{
+        position: relative;
+        z-index: 1;
+        &-item{
+          margin-bottom: 14px;
+          &__num{
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 1;
+            color: #FF3D23;
+          }
+          &__text{
+            font-weight: 300;
+            font-size: 19px;
+            line-height: 1.32;
+            color: #2E2928;
+          }
+        }
+      }
+    }
+  }
+  &-pattern{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &-img{
+      position: relative;
+      &:before{
+        content: url("/src/img/design/elements/pattern-about.svg");
+        position: absolute;
+        top: 5px;
+        left: -235px;
+      }
+    }
+  }
+  &-pattern-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &-img{
+      position: relative;
+      &:before{
+        content: url("/src/img/design/elements/pattern-about-2.svg");
+        position: absolute;
+        top: -50px;
+        right: -75px;
+      }
+    }
+  }
+}

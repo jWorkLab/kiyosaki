@@ -1,4 +1,17 @@
 .whom{
+  position: relative;
+  overflow: hidden;
+  padding-top: 115px;
+  //z-index: 1;
+  &:before{
+    content: '';
+    height: 30px;
+    width: 2000px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background: #fff;
+  }
   &-item{
     @include make-col-ready();
     @include make-col(4);
@@ -23,6 +36,17 @@
       line-height: 1.26;
       color: #2E2928;
       margin: auto;
+    }
+  }
+  &-pattern{
+    position: relative;
+    z-index: 5;
+    &:before{
+      content: url("/src/img/design/elements/pattern-whom.svg");
+      position: absolute;
+      bottom: -158px;
+      left: -50px;
+      z-index: 0;
     }
   }
 }

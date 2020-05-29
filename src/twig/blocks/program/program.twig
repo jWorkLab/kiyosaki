@@ -1,10 +1,29 @@
 <section class="section section--black program">
+    <div class="program-pattern">
+        <div class="container">
+            <div class="program-pattern-img"></div>
+            <!-- /.program-pattern-img -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.program-pattern -->
+    <div class="program-pattern-2">
+        <div class="container">
+            <div class="program-pattern-2-img"></div>
+            <!-- /.program-pattern-img -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.program-pattern -->
     <div class="container">
         <h2 class="section-header section-header--white">
             <span class="section-header__line section-header__line--left"></span>
             <!-- /.section-header__line -->
             О ЧЕМ ВЫ УЗНАЕТЕ<br>
-            НА ВЕБИНАРЕ<br>
+            НА ВЕБИНАРЕ <span class="section-header__line section-header__line--right section-header__line--medium"></span>
+            <!-- /.section-header__line --><br>
+            <span class="section-header__indent"></span>
+            <!-- /.section-header__ident -->
             РОБЕРТА КИЙОСАКИ
         </h2>
         <!-- /.section-header -->
@@ -45,6 +64,11 @@
             <!-- /.program-content -->
         </div>
         <!-- /.row -->
+        <div class="program-counter">
+            {% set text = '<b>Еще не приняли решение?</b> Учтите, что<br> стоимость участия поднимется через:' %}
+            {% include '../../blocks/counter/counter.twig' %}
+        </div>
+        <!-- /.main-counter -->
     </div>
     <!-- /.container -->
 </section>

@@ -1,4 +1,12 @@
 <section class="section partners">
+    <div class="partners-pattern">
+        <div class="container">
+            <div class="partners-pattern-img"></div>
+            <!-- /.partners-pattern-img -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.program-pattern -->
     <div class="container">
         <h2 class="section-header">
             <span class="section-header__line section-header__line--left"></span>
@@ -7,6 +15,34 @@
             ОНЛАЙН-ВСТРЕЧИ
         </h2>
         <!-- /.section-header -->
+        <div class="partners-slider owl-carousel">
+            {% for i in range(1, 14) %}
+                <div class="partners-slider__item">
+                    <img src="/src/img/design/icons/partners/{{ i }}.png" alt="ico">
+                </div>
+                <!-- /.partners-slider__item -->
+            {% endfor %}
+        </div>
+        <!-- /.partners-slider -->
+        <div class="partners-slider-control">
+            <div class="owl-control">
+                <div class="owl-control-btn owl-control-btn--prev"></div>
+                <!-- /.owl-control-btn -->
+                <div class="owl-control-counter">
+                    <div class="owl-control-counter-current"></div>
+                    <!-- /.owl-control-counter-current -->
+                    <div class="owl-control-counter-spaser"></div>
+                    <!-- /.owl-control-counter-spaser -->
+                    <div class="owl-control-counter--all"></div>
+                    <!-- /.owl-control-counter--all -->
+                </div>
+                <!-- /.owl-control-counter -->
+                <div class="owl-control-btn owl-control-btn--next"></div>
+                <!-- /.owl-control-btn -->
+            </div>
+            <!-- /.owl-control -->
+        </div>
+        <!-- /.partners-slider-control -->
     </div>
     <!-- /.container -->
 </section>

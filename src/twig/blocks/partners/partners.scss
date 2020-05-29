@@ -1,1 +1,33 @@
-.partners{}
+.partners{
+  padding-bottom: 0;
+  position: relative;
+  &-slider{
+    &__item{
+      line-height: 103px;
+      text-align: center;
+      img{
+        max-width: 90%;
+      }
+    }
+  }
+  &-slider-control{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  &-pattern{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &-img{
+      position: relative;
+      &:before{
+        content: url("/src/img/design/elements/pattern-partners.svg");
+        position: absolute;
+        top: 400px;
+        left: -200px;
+      }
+    }
+  }
+}

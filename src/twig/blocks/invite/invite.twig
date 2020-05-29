@@ -7,6 +7,28 @@
             от РОБЕРТЕ КИЙОСАКИ
         </h2>
         <!-- /.section-header -->
+        <div class="invite-video">
+            <div class="invite-video__play">
+
+            </div>
+            <!-- /.invite-video__play -->
+        </div>
+        <!-- /.invite-video -->
+        <div class="invite-action">
+            <div class="invite-action-btn">
+                <a href="#" class="btn">
+                    ОПЛАТИТЬ УЧАСТИЕ В ВЕБИНАРЕ
+                </a>
+                <!-- /.btn -->
+            </div>
+            <!-- /.invite-action-btn -->
+            <div class="invite-action-counter">
+                {% set text = '<b>Пока думаете?</b> Учтите, что стоимость<br> участия поднимется через:' %}
+                {% include '../../blocks/counter/counter.twig' %}
+            </div>
+            <!-- /.invite-action-counter -->
+        </div>
+        <!-- /.invite-action -->
     </div>
     <!-- /.container -->
 </section>

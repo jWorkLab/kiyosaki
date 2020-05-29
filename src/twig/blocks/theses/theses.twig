@@ -1,4 +1,12 @@
 <section class="section section--gray theses">
+    <div class="theses-pattern">
+        <div class="container">
+            <div class="theses-pattern-img"></div>
+            <!-- /.theses-pattern-img -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.program-pattern -->
     <div class="container">
         <h2 class="section-header">
             ПОЛЕЗНЫЕ МЫСЛИ<br>
@@ -7,6 +15,38 @@
             ОТ РОБЕРТА КИЙОСАКИ
         </h2>
         <!-- /.section-header -->
+        <div class="theses-slider owl-carousel">
+            {% for i in range(1, 5) %}
+                <div class="theses-slider-item">
+                    <div class="theses-slider-item__text">
+                        {{ i }} «Ваш мозг может все. Абсолютно все. Главное, убедить себя в этом.
+                        Руки не знают, что они не умеют отжиматься, ноги не знают, что они слабые, живот не знает, что он сплошной жир. Это знает ваш мозг. Убедив себя в том, что вы можете все, вы сможете действительно все».
+                    </div>
+                    <!-- /.theses-slider-item__text -->
+                </div>
+                <!-- /.theses-slider-item -->
+            {% endfor %}
+        </div>
+        <!-- /.theses-slider -->
+        <div class="theses-slider-control">
+            <div class="owl-control">
+                <div class="owl-control-btn owl-control-btn--prev"></div>
+                <!-- /.owl-control-btn -->
+                <div class="owl-control-counter">
+                    <div class="owl-control-counter-current"></div>
+                    <!-- /.owl-control-counter-current -->
+                    <div class="owl-control-counter-spaser"></div>
+                    <!-- /.owl-control-counter-spaser -->
+                    <div class="owl-control-counter--all"></div>
+                    <!-- /.owl-control-counter--all -->
+                </div>
+                <!-- /.owl-control-counter -->
+                <div class="owl-control-btn owl-control-btn--next"></div>
+                <!-- /.owl-control-btn -->
+            </div>
+            <!-- /.owl-control -->
+        </div>
+        <!-- /.theses-slider-control -->
     </div>
     <!-- /.container -->
 </section>
