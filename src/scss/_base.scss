@@ -109,3 +109,19 @@ a{
     }
   }
 }
+
+.md-hidden{
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+.sm-hidden{
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+.xs-hidden{
+  @include media-breakpoint-down(xs) {
+    display: none;
+  }
+}

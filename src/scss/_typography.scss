@@ -26,6 +26,7 @@
     @include media-breakpoint-down(sm) {
       height: 4px;
       top: -9px;
+      width: 50px;
     }
     &--left{
       margin-left: -35px;
@@ -42,9 +43,15 @@
     }
     &--medium{
       width: 126px;
+      @include media-breakpoint-down(sm) {
+        width: 90px;
+      }
     }
     &--long{
       width: 224px;
+      @include media-breakpoint-down(sm) {
+        width: 115px;
+      }
     }
   }
   &__indent{
@@ -52,5 +59,8 @@
     padding-right: 10px;
     //height: 1px;
     //border: 1px solid #000;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
   }
 }

@@ -4,7 +4,7 @@
   padding-top: 115px;
   //z-index: 1;
   @include media-breakpoint-down(sm) {
-    padding-top: 50px;
+    padding-top: 35px;
     padding-bottom: 25px;
   }
   &:before{
@@ -15,6 +15,9 @@
     top: 0;
     left: 50%;
     background: #fff;
+    @include media-breakpoint-down(sm) {
+      height: 15px;
+    }
   }
   &-item{
     @include make-col-ready();

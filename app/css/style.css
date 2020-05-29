@@ -4137,8 +4137,9 @@ p {
 }
 @media (max-width: 767.98px) {
     .section-header__line {
-        top: -9px; 
+        top: -9px;
 
+        width: 50px; 
         height: 4px;
     }
 }
@@ -4158,13 +4159,28 @@ p {
 .section-header__line--medium {
     width: 126px;
 }
+@media (max-width: 767.98px) {
+    .section-header__line--medium {
+        width: 90px;
+    }
+}
 .section-header__line--long {
     width: 224px;
+}
+@media (max-width: 767.98px) {
+    .section-header__line--long {
+        width: 115px;
+    }
 }
 .section-header__indent {
     display: inline-block;
 
     padding-right: 10px;
+}
+@media (max-width: 767.98px) {
+    .section-header__indent {
+        display: none;
+    }
 }
 
 html,
@@ -4285,6 +4301,24 @@ a:hover {
 }
 .owl-control-btn--next:hover:before {
     left: 40px;
+}
+
+@media (max-width: 991.98px) {
+    .md-hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .sm-hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .xs-hidden {
+        display: none;
+    }
 }
 
 .btn {
@@ -5624,6 +5658,13 @@ a.btn {
 
     background: url('../img/design/bg/program.jpg') top no-repeat #050505;
 }
+@media (max-width: 767.98px) {
+    .program {
+        padding-top: 50px;
+
+        background: url('../img/design/bg/program-xs.jpg') top right #050505;
+    }
+}
 .program:before {
     position: absolute;
     top: 0;
@@ -5635,6 +5676,11 @@ a.btn {
     content: '';
 
     background: #f5f7f6;
+}
+@media (max-width: 767.98px) {
+    .program:before {
+        height: 15px;
+    }
 }
 .program .section-header {
     margin-bottom: 35px;
@@ -5650,6 +5696,36 @@ a.btn {
 
     flex: 0 0 58.33333%;
 }
+@media (max-width: 1199.98px) {
+    .program-content {
+        max-width: 66.66667%;
+        padding-bottom: 187px; 
+
+        flex: 0 0 66.66667%;
+    }
+}
+@media (max-width: 991.98px) {
+    .program-content {
+        max-width: 75%;
+        padding-bottom: 0; 
+
+        flex: 0 0 75%;
+    }
+}
+@media (max-width: 767.98px) {
+    .program-content {
+        max-width: 58.33333%; 
+
+        flex: 0 0 58.33333%;
+    }
+}
+@media (max-width: 575.98px) {
+    .program-content {
+        max-width: 100%; 
+
+        flex: 0 0 100%;
+    }
+}
 .program-content-item {
     position: relative;
 
@@ -5662,6 +5738,14 @@ a.btn {
     padding-left: 10px;
 
     flex: 0 0 50%;
+}
+@media (max-width: 767.98px) {
+    .program-content-item {
+        max-width: 100%;
+        margin-bottom: 40px; 
+
+        flex: 0 0 100%;
+    }
 }
 .program-content-item__num {
     font-size: 18px;
@@ -5683,21 +5767,37 @@ a.btn {
 }
 .program-content-item__num:after {
     position: absolute;
+    top: 35px;
     bottom: 4px;
     left: 10px; 
 
     width: 2px;
-    height: 33px;
 
     content: '';
 
     background: #ff3d23;
+}
+@media (max-width: 767.98px) {
+    .program-content-item__num:after {
+        top: 30px;
+        bottom: 2px;
+    }
 }
 .program-content-item__text {
     font-size: 19px;
     line-height: 1.26;
 
     color: #fff;
+}
+@media (max-width: 767.98px) {
+    .program-content-item__text {
+        font-size: 18px;
+    }
+}
+@media (max-width: 575.98px) {
+    .program-content .btn {
+        width: 100%;
+    }
 }
 .program-thesis {
     font-size: 19px;
@@ -5708,17 +5808,31 @@ a.btn {
 
     color: #fff;
 }
+@media (max-width: 767.98px) {
+    .program-thesis {
+        font-size: 17px;
+
+        margin-bottom: 25px;
+    }
+}
 .program-counter {
     position: absolute;
     right: 110px;
     bottom: 0;
 }
+@media (max-width: 991.98px) {
+    .program-counter {
+        position: relative; 
+        right: auto;
+    }
+}
 .program-counter:before {
     position: absolute;
+    z-index: 0; 
     top: 0;
-    left: 500px; 
+    left: 0;
 
-    width: 1000px;
+    width: 2000px;
     height: 100%;
 
     content: '';
@@ -5769,7 +5883,7 @@ a.btn {
 }
 @media (max-width: 767.98px) {
     .whom {
-        padding-top: 50px;
+        padding-top: 35px;
         padding-bottom: 25px;
     }
 }
@@ -5784,6 +5898,11 @@ a.btn {
     content: '';
 
     background: #fff;
+}
+@media (max-width: 767.98px) {
+    .whom:before {
+        height: 15px;
+    }
 }
 .whom-item {
     position: relative;
@@ -6042,12 +6161,21 @@ a.btn {
 }
 
 .counter {
+    position: relative;
+    z-index: 2; 
+
     display: inline-flex;
 
-    width: 530px; 
+    width: 530px;
     padding: 30px 45px;
 
     background: #fff;
+}
+@media (max-width: 767.98px) {
+    .counter {
+        width: 100%; 
+        padding: 10px 20px 0;
+    }
 }
 @media (max-width: 767.98px) {
     .counter-counter {
@@ -6068,16 +6196,14 @@ a.btn {
 }
 @media (max-width: 1199.98px) {
     .counter-counter__title {
-        font-size: 13px;
-
-        white-space: nowrap;
+        line-height: 1.3;
     }
 }
 @media (max-width: 767.98px) {
     .counter-counter__title {
-        width: 100%;
-        margin-bottom: 10px; 
-        padding-top: 3px;
+        font-size: 16px;
+
+        margin-bottom: 15px;
     }
 }
 
@@ -6104,6 +6230,7 @@ a.btn {
 @media (max-width: 767.98px) {
     .counter-clock-item {
         width: 60px;
+        margin-right: 14px;
     }
 }
 .counter-clock-item:last-of-type {
@@ -6167,13 +6294,17 @@ a.btn {
 }
 @media (max-width: 991.98px) {
     .counter-clock-item__title {
-        font-size: 9px;
+        font-size: 12px;
 
         right: -18px;
+        bottom: -2px;
     }
 }
 @media (max-width: 767.98px) {
     .counter-clock-item__title {
-        bottom: 8px;
+        font-size: 11px; 
+
+        right: -15px;
+        bottom: 3px;
     }
 }
