@@ -3,7 +3,8 @@
   width: 500px;
   background-color: #ffffff;
   padding: 50px 58px;
-  box-shadow: 0 8px 54px rgba(236, 236, 236, 0.67);
+  //box-shadow: 0 8px 54px rgba(236, 236, 236, 0.67);
+  box-shadow: 35px 35px 150px rgba(0, 0, 0, 0.11);
   //box-shadow: 0 13px 95px rgba(239, 228, 216, 0.67);
   //border-radius: 30px 0 30px 30px;
   //background-color: #ffffff;
@@ -25,6 +26,13 @@
     padding: 70px 15px 50px;
     border-radius: 0;
   }
+  .section-header__line{
+    height: 5px;
+    top: -12px;
+    &--left{
+      width: 120px;
+    }
+  }
   &--video{
     width: 676px;
     iframe{
@@ -40,25 +48,23 @@
     }
   }
   &__title{
-    color: #e75840;
-    font-size: 36px;
-    font-weight: 800;
-    text-transform: uppercase;
-    //color: #000000;
-    //font-size: 36px;
-    //font-weight: 900;
-    //text-transform: uppercase;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.12;
     text-align: center;
+    text-transform: uppercase;
+
+    color: #2E2928;
     @include media-breakpoint-down(sm) {
       font-size: 26px;
     }
   }
   &__description{
-    color: #121312;
-    font-size: 27px;
-    font-weight: 400;
-    line-height: 28px;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 1.22;
     text-align: center;
+    color: #2E2928;
     margin-bottom: 30px;
     @include media-breakpoint-down(sm) {
       font-size: 18px;
@@ -72,18 +78,32 @@
 .modal-form{
   &-input{
     position: relative;
+    &__label{
+      font-weight: bold;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(46, 41, 40, 0.3);
+      background: #fff;
+      padding: 0 5px;
+      position: absolute;
+      left: 25px;
+      top: -7px;
+    }
     &__input{
       margin-bottom: 10px;
       input{
+        height: 73px;
         width: 100%;
-        color: #121312;
+        font-weight: 500;
         font-size: 18px;
-        line-height: 90px;
+        color: #2E2928;
+        line-height: 73px;
         //padding-right: 30px;
-        border: 3px solid #f7f5f5;
+        border: 1px solid #DDDDDD;
         transition: .3s;
         padding: 0 30px;
-        background-color: #f7f5f5;
+        //background-color: #f7f5f5;
         &.input-name{
           //background: url("/src/img/design/icons/form/name.svg") no-repeat;
           //background-position: 100% 20px;
@@ -116,9 +136,9 @@
           color: #e14a39;
         }
         &.valid{
-          background: url("/src/img/design/icons/form/valid.svg") no-repeat;
-          background-position: 90% 40px;
-          border: 3px solid #f7f5f5;
+          //background: url("/src/img/design/icons/form/valid.svg") no-repeat;
+          //background-position: 90% 40px;
+          //border: 3px solid #f7f5f5;
         }
       }
     }
@@ -139,13 +159,13 @@
 .modal-form-agree{
   margin-top: 10px;
   //text-align: center;
-  color: #121312;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 2.13;
-  a{
-    text-decoration: underline;
-  }
+  //color: #121312;
+  //font-size: 14px;
+  //font-weight: 400;
+  //line-height: 2.13;
+  //a{
+  //  text-decoration: underline;
+  //}
 }
 
 .fancybox-is-open .fancybox-bg{
@@ -173,13 +193,6 @@
   }
 }
 
-
-.icr-text{
-  font-size: 14px!important;
-  @include media-breakpoint-down(sm) {
-    font-size: 12px!important;
-  }
-}
 
 //.fancybox-slide{
 //  &:after{

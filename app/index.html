@@ -8,8 +8,8 @@
 	<title>Kiyosaki </title>
 	<meta name="description" content="">
 
-	<link rel="stylesheet" href="css/assets.css?v=1172007872">
-	<link rel="stylesheet" href="css/style.css?v=1172007872">
+	<link rel="stylesheet" href="css/assets.css?v=547952171">
+	<link rel="stylesheet" href="css/style.css?v=547952171">
 </head>
 
 <body>
@@ -54,7 +54,7 @@
 						</div>
 						<!-- /.header-contact-phone -->
 						<div class="header-contact-callme">
-							<a href="#" class="btn-small">
+							<a href="#modal-form" data-fancybox class="btn-small">
 								перезвоните мне
 							</a>
 							<!-- /.btn-small -->
@@ -103,7 +103,7 @@
 								людей во всем мире
 							</div>
 							<!-- /.main-book-description__text -->
-							<a href="#" class="btn">
+							<a href="#modal-form" data-fancybox class="btn">
 								ОПЛАТИТЬ <span class="md-hidden"> УЧАСТИЕ</span>
 							</a>
 							<!-- /.btn -->
@@ -498,7 +498,7 @@
 						ВОЗМОЖНО, ИМЕННО ЭТИХ СОВЕТОВ ВАМ НЕ ХВАТАЛО, ЧТОБЫ СТАТЬ УСПЕШНЫМ, БОГАТЫМ И НИКОГДА НЕ БОЯТЬСЯ КРИЗИСОВ
 					</div>
 					<!-- /.program-thesis -->
-					<a href="#" class="btn">
+					<a href="#modal-form" data-fancybox class="btn">
 						ОПЛАТИТЬ <span class="sm-hidden">УЧАСТИЕ</span> <span class="md-hidden">В ВЕБИНАРЕ</span>
 					</a>
 					<!-- /.btn -->
@@ -676,15 +676,15 @@
 			</h2>
 			<!-- /.section-header -->
 			<div class="invite-video">
-				<div class="invite-video__play">
+				<a data-fancybox href="https://www.youtube.com/embed/oPZmBoh3tzY?autoplay=1" class="invite-video__play">
 
-				</div>
+				</a>
 				<!-- /.invite-video__play -->
 			</div>
 			<!-- /.invite-video -->
 			<div class="invite-action">
 				<div class="invite-action-btn">
-					<a href="#" class="btn">
+					<a href="#modal-form" data-fancybox class="btn">
 						ОПЛАТИТЬ <span class="xs-hidden">УЧАСТИЕ</span> <span class="sm-hidden"> В ВЕБИНАРЕ</span>
 					</a>
 					<!-- /.btn -->
@@ -1009,8 +1009,8 @@
 							</div>
 							<!-- /.tariff-table-payment -->
 						</th>
-						<td class="no-border padding-min"><a href="#" class="btn">выбрать</a> </td>
-						<td class="no-border padding-min"><a href="#" class="btn">выбрать</a> </td>
+						<td class="no-border padding-min"><a href="#modal-form" data-fancybox class="btn">выбрать</a> </td>
+						<td class="no-border padding-min"><a href="#modal-form" data-fancybox class="btn">выбрать</a> </td>
 					</tr>
 				</table>
 				<div class="payment-md">
@@ -1184,7 +1184,7 @@
 					</div>
 					<!-- /.footer-contact-phone -->
 					<div class="footer-contact-callme">
-						<a href="#" class="btn-small">
+						<a href="#modal-form" data-fancybox class="btn-small">
 							перезвоните мне
 						</a>
 						<!-- /.btn-small -->
@@ -1226,7 +1226,13 @@
 	<div class="modal" id="modal-form">
 		<div class="modal__title">
 			<span>
-				Оставьте заявку
+				Оставьте
+				<span class="section-header__line section-header__line--right"></span>
+				<!-- /.section-header__line -->
+				<br>
+				<span class="section-header__line section-header__line--left section-header__line--no-margin-left"></span>
+				<!-- /.section-header__line -->
+				заявку
 			</span>
 		</div>
 		<!-- /.modal__title -->
@@ -1238,6 +1244,10 @@
 		<!-- /.modal__description -->
 		<form method="post" action="sendmessage.php" class="modal-form">
 			<div class="modal-form-input">
+				<div class="modal-form-input__label">
+					Имя
+				</div>
+				<!-- /.modal-form-input__label -->
 				<div class="modal-form-input__input">
 					<input required type="text" name="name" class="input-name" placeholder="Ваше имя">
 				</div>
@@ -1255,6 +1265,10 @@
 			</div>
 			<!-- /.modal-form-input -->
 			<div class="modal-form-input">
+				<div class="modal-form-input__label">
+					телефон
+				</div>
+				<!-- /.modal-form-input__label -->
 				<div class="modal-form-input__input">
 					<input required type="text" name="phone" class="input-phone" placeholder="Ваш телефон">
 				</div>
@@ -1272,6 +1286,10 @@
 			</div>
 			<!-- /.modal-form-input -->
 			<div class="modal-form-input">
+				<div class="modal-form-input__label">
+					e-mail
+				</div>
+				<!-- /.modal-form-input__label -->
 				<div class="modal-form-input__input">
 					<input required type="text" name="email" class="input-email" placeholder="Ваше e-mail">
 				</div>
@@ -1288,7 +1306,7 @@
 				<!-- /.modal-form-input__ico -->
 			</div>
 			<!-- /.modal-form-input -->
-			<button class="btn-action">
+			<button class="btn">
 				Отправить заявку
 			</button>
 			<!-- /.btn action -->
@@ -1332,8 +1350,8 @@
 	</script>
 
 
-	<script src="js/assets.js?v=1172007872"></script>
-	<script src="js/main.js?v=1172007872"></script>
+	<script src="js/assets.js?v=547952171"></script>
+	<script src="js/main.js?v=547952171"></script>
 
 </body>
 

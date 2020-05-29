@@ -1,7 +1,13 @@
 <div class="modal" id="modal-form">
     <div class="modal__title">
         <span>
-            Оставьте заявку
+            Оставьте
+            <span class="section-header__line section-header__line--right"></span>
+            <!-- /.section-header__line -->
+            <br>
+            <span class="section-header__line section-header__line--left section-header__line--no-margin-left"></span>
+            <!-- /.section-header__line -->
+            заявку
         </span>
     </div>
     <!-- /.modal__title -->
@@ -13,6 +19,10 @@
     <!-- /.modal__description -->
     <form method="post" action="sendmessage.php" class="modal-form">
         <div class="modal-form-input">
+            <div class="modal-form-input__label">
+                Имя
+            </div>
+            <!-- /.modal-form-input__label -->
             <div class="modal-form-input__input">
                 <input required type="text" name="name" class="input-name" placeholder="Ваше имя">
             </div>
@@ -24,6 +34,10 @@
         </div>
         <!-- /.modal-form-input -->
         <div class="modal-form-input">
+            <div class="modal-form-input__label">
+                телефон
+            </div>
+            <!-- /.modal-form-input__label -->
             <div class="modal-form-input__input">
                 <input required type="text" name="phone" class="input-phone" placeholder="Ваш телефон">
             </div>
@@ -35,6 +49,10 @@
         </div>
         <!-- /.modal-form-input -->
         <div class="modal-form-input">
+            <div class="modal-form-input__label">
+                e-mail
+            </div>
+            <!-- /.modal-form-input__label -->
             <div class="modal-form-input__input">
                 <input required type="text" name="email"  class="input-email" placeholder="Ваше e-mail">
             </div>
@@ -45,7 +63,7 @@
             <!-- /.modal-form-input__ico -->
         </div>
         <!-- /.modal-form-input -->
-        <button class="btn-action">
+        <button class="btn">
             Отправить заявку
         </button>
         <!-- /.btn action -->

@@ -1,0 +1,159 @@
+/* Ion.CheckRadio, Skin Base
+// Version 2.0.0
+//
+// © Denis Ineshin, 2015
+// https://github.com/IonDen
+// ===================================================================================================================*/
+
+.icr-label {
+  position: relative;
+  display: inline-block;
+}
+
+.icr-hidden {
+  position: absolute;
+  display: block;
+  top: 0; left: 0;
+  width: 0; height: 0;
+  overflow: hidden;
+}
+
+.icr-input {
+  position: absolute;
+  display: block;
+  top: -20px; left: -20px;
+}
+
+.icr-text {
+  display: inline;
+  vertical-align: middle;
+}
+
+.icr-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.icr-label.disabled {
+  opacity: 0.5;
+}
+.lt-ie9 .icr-label.disabled {
+  filter: alpha(opacity=50);
+}
+
+.icr-label.disabled .type_checkbox {
+  background-position: 0 0 !important;
+}
+.icr-label.disabled .type_radio {
+  background-position: 0 -50px !important;
+}
+
+.icr-label.checked.disabled .type_checkbox {
+  background-position: -100px 0 !important;
+}
+.icr-label.checked.disabled .type_radio {
+  background-position: -100px -50px !important;
+}
+
+
+
+/* Ion.CheckRadio, Cloudy Skin
+// Version 2.0.0
+//
+// © Denis Ineshin, 2015
+// https://github.com/IonDen
+// ===================================================================================================================*/
+
+.icr-label {
+  padding-right: 2px;
+  margin: 0 5px 5px 0;
+  user-select: none;
+}
+
+.icr-item {
+  width: 22px; height: 22px;
+  border: 1px solid #FF3D23;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+
+.icr-label.focused .icr-item {
+  //-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  //-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  //box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+.lt-ie9 .icr-label.focused .icr-item {
+  border-color: #555;
+}
+
+.icr-item.type_checkbox {
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.icr-label.checked .type_checkbox:after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0; left: 0; right: 0; bottom: 0;
+  border: 6px solid #FF3D23;
+  //width: 4px; height: 12px;
+  //margin: -6px 0 0 -2px;
+  //background: #999;
+
+}
+
+//.icr-label.checked .type_checkbox:before {
+//  position: absolute;
+//  display: block;
+//  content: "";
+//  top: 50%; left: 50%;
+//  width: 12px; height: 4px;
+//  margin: -2px 0 0 -6px;
+//  background: #999;
+//
+//  -webkit-transform-origin: 50% 50%;
+//  -moz-transform-origin: 50% 50%;
+//  -o-transform-origin: 50% 50%;
+//  transform-origin: 50% 50%;
+//
+//  -webkit-transform: rotate(45deg);
+//  -moz-transform: rotate(45deg);
+//  -o-transform: rotate(45deg);
+//  transform: rotate(45deg);
+//}
+
+
+.icr-label:hover .icr-item, .icr-label.checked .icr-item {
+  //border-color: #999;
+}
+
+.icr-label.checked:hover .icr-item:after, .icr-label.checked:hover .icr-item:before {
+  //background: #999;
+}
+
+.icr-label.disabled.checked:hover .icr-item:after, .icr-label.disabled.checked:hover .icr-item:before {
+  //background: #ccc;
+}
+
+
+//===========================
+
+.icr-text{
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-top: 2px;
+  padding-left: 4px;
+  a{
+    color: #FF3D23;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+      color: #FF3D23;
+    }
+  }
+}

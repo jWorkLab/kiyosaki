@@ -3966,21 +3966,21 @@ html {
 }
 
 ::-webkit-input-placeholder {
-    color: #000;
+    color: #ddd;
 }
 
 ::-moz-placeholder {
     opacity: 1;
-    color: #000;
+    color: #ddd;
 }
 
 :-moz-placeholder {
     opacity: 1;
-    color: #000;
+    color: #ddd;
 }
 
 :-ms-input-placeholder {
-    color: #000;
+    color: #ddd;
 }
 
 .text-left {
@@ -4058,6 +4058,145 @@ h5,
 h6,
 p {
     margin: 0;
+}
+
+/* Ion.CheckRadio, Skin Base
+// Version 2.0.0
+//
+// © Denis Ineshin, 2015
+// https://github.com/IonDen
+// ===================================================================================================================*/
+.icr-label {
+    position: relative;
+
+    display: inline-block;
+}
+
+.icr-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    overflow: hidden; 
+
+    width: 0;
+    height: 0;
+}
+
+.icr-input {
+    position: absolute;
+    top: -20px;
+    left: -20px; 
+
+    display: block;
+}
+
+.icr-text {
+    display: inline;
+
+    vertical-align: middle;
+}
+
+.icr-item {
+    position: relative;
+
+    display: inline-block;
+
+    vertical-align: middle;
+}
+
+.icr-label.disabled {
+    opacity: .5;
+}
+
+.lt-ie9 .icr-label.disabled {
+    filter: alpha(opacity=50);
+}
+
+.icr-label.disabled .type_checkbox {
+    background-position: 0 0 !important;
+}
+
+.icr-label.disabled .type_radio {
+    background-position: 0 -50px !important;
+}
+
+.icr-label.checked.disabled .type_checkbox {
+    background-position: -100px 0 !important;
+}
+
+.icr-label.checked.disabled .type_radio {
+    background-position: -100px -50px !important;
+}
+
+/* Ion.CheckRadio, Cloudy Skin
+// Version 2.0.0
+//
+// © Denis Ineshin, 2015
+// https://github.com/IonDen
+// ===================================================================================================================*/
+.icr-label {
+    margin: 0 5px 5px 0;
+    padding-right: 2px;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.icr-item {
+    width: 22px;
+    height: 22px;
+
+    cursor: pointer;
+
+    border: 1px solid #ff3d23;
+    border-radius: 0;
+}
+
+.lt-ie9 .icr-label.focused .icr-item {
+    border-color: #555;
+}
+
+.icr-item.type_checkbox {
+    border-radius: 2px;
+}
+
+.icr-label.checked .type_checkbox:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    content: '';
+
+    border: 6px solid #ff3d23;
+}
+
+.icr-text {
+    font-size: 11px;
+
+    padding-top: 2px;
+    padding-left: 4px; 
+
+    text-transform: uppercase;
+
+    color: #000;
+}
+.icr-text a {
+    text-decoration: none; 
+
+    color: #ff3d23;
+}
+.icr-text a:hover {
+    text-decoration: underline;
+
+    color: #ff3d23;
 }
 
 @font-face {
@@ -4357,6 +4496,7 @@ a:hover {
 }
 .btn:hover {
     color: #fff;
+    box-shadow: 0 34px 84px rgba(255, 61, 35, .2);
 }
 .btn:hover:after {
     right: -20px;
@@ -4385,6 +4525,7 @@ a.btn {
 }
 .btn-small:hover {
     color: #fff;
+    box-shadow: 0 34px 84px rgba(255, 61, 35, .2);
 }
 
 a.btn-small {
@@ -5063,7 +5204,7 @@ a.btn-small {
     padding: 50px 58px;
 
     background-color: #fff;
-    box-shadow: 0 8px 54px rgba(236, 236, 236, .67);
+    box-shadow: 35px 35px 150px rgba(0, 0, 0, .11);
 }
 .modal:before {
     position: absolute;
@@ -5086,6 +5227,14 @@ a.btn-small {
         border-radius: 0;
     }
 }
+.modal .section-header__line {
+    top: -12px; 
+
+    height: 5px;
+}
+.modal .section-header__line--left {
+    width: 120px;
+}
 .modal--video {
     width: 676px;
 }
@@ -5099,13 +5248,14 @@ a.btn-small {
     width: 100%;
 }
 .modal__title {
-    font-size: 36px;
-    font-weight: 800;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.12;
 
-    text-align: center; 
+    text-align: center;
     text-transform: uppercase;
 
-    color: #e75840;
+    color: #2e2928;
 }
 @media (max-width: 767.98px) {
     .modal__title {
@@ -5113,15 +5263,15 @@ a.btn-small {
     }
 }
 .modal__description {
-    font-size: 27px;
-    font-weight: 400;
-    line-height: 28px;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 1.22;
 
     margin-bottom: 30px; 
 
     text-align: center;
 
-    color: #121312;
+    color: #2e2928;
 }
 @media (max-width: 767.98px) {
     .modal__description {
@@ -5135,30 +5285,42 @@ a.btn-small {
 .modal-form-input {
     position: relative;
 }
+.modal-form-input__label {
+    font-size: 10px;
+    font-weight: bold;
+
+    position: absolute;
+    top: -7px; 
+    left: 25px;
+
+    padding: 0 5px;
+
+    letter-spacing: .2em;
+    text-transform: uppercase;
+
+    color: rgba(46, 41, 40, .3);
+    background: #fff;
+}
 .modal-form-input__input {
     margin-bottom: 10px;
 }
 .modal-form-input__input input {
     font-size: 18px;
-    line-height: 90px;
+    font-weight: 500;
+    line-height: 73px;
 
     width: 100%;
-    padding: 0 30px;
+    height: 73px;
+    padding: 0 30px; 
 
     transition: .3s;
 
-    color: #121312;
-    border: 3px solid #f7f5f5;
-    background-color: #f7f5f5;
+    color: #2e2928;
+    border: 1px solid #ddd;
 }
 .modal-form-input__input input.error {
     color: #e14a39; 
     border: 3px solid #e14a39;
-}
-.modal-form-input__input input.valid {
-    border: 3px solid #f7f5f5; 
-    background: url('../img/design/icons/form/valid.svg') no-repeat;
-    background-position: 90% 40px;
 }
 .modal-form-input__ico {
     position: absolute;
@@ -5174,16 +5336,7 @@ a.btn-small {
 }
 
 .modal-form-agree {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 2.13; 
-
     margin-top: 10px;
-
-    color: #121312;
-}
-.modal-form-agree a {
-    text-decoration: underline;
 }
 
 .fancybox-is-open .fancybox-bg {
@@ -5214,15 +5367,6 @@ a.btn-small {
 .fancybox-button.fancybox-close-small:hover {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
-}
-
-.icr-text {
-    font-size: 14px !important;
-}
-@media (max-width: 767.98px) {
-    .icr-text {
-        font-size: 12px !important;
-    }
 }
 
 label.error {

@@ -129,4 +129,6 @@ function timer() {
 var akcia_interval = setInterval(timer, 1);
 // ==============
 
+$("input[type='checkbox']").ionCheckRadio();
+
 
