@@ -4956,6 +4956,11 @@ a.btn-small {
     position: relative;
     left: -19px;
 }
+@media (max-width: 767.98px) {
+    .footer-brand__logo img {
+        left: -7px;
+    }
+}
 .footer-copyright {
     position: relative;
     position: relative;
@@ -5377,6 +5382,12 @@ a.btn-small {
     width: 100%;
 
     color: #000;
+    border: 1px solid #000;
+}
+@media (max-width: 1199.98px) {
+    .tariff-table table {
+        width: 500px;
+    }
 }
 .tariff-table table tr:last-of-type th,
 .tariff-table table tr:last-of-type td {

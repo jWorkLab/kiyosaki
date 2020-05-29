@@ -209,6 +209,9 @@
       img{
         position: relative;
         left: -19px;
+        @include media-breakpoint-down(sm) {
+          left: -7px;
+        }
         //top: -11px;
       }
     }
