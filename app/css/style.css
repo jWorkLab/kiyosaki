@@ -5148,7 +5148,9 @@ a.btn-small {
 }
 @media (max-width: 767.98px) {
     .main-book-description__text {
-        margin-bottom: 20px; 
+        font-size: 20px; 
+
+        margin-bottom: 20px;
 
         color: #fff;
     }
@@ -5163,6 +5165,11 @@ a.btn-small {
 }
 .main-book-description .btn span.md-hidden {
     display: inline-block;
+}
+@media (max-width: 767.98px) {
+    .main-book-description .btn span.md-hidden {
+        padding-left: 5px;
+    }
 }
 .main-online {
     position: absolute;
@@ -6388,6 +6395,7 @@ a.btn-small {
 }
 @media (max-width: 767.98px) {
     .pandemic {
+        margin-top: -1px; 
         padding-top: 30px;
         padding-bottom: 30px;
     }
@@ -6563,6 +6571,12 @@ a.btn-small {
     right: -320px; 
 
     content: url('../img/design/elements/pattern-pandemic.svg');
+}
+@media (max-width: 767.98px) {
+    .pandemic-pattern:before {
+        top: 40px;
+        right: -340px;
+    }
 }
 
 .counter {

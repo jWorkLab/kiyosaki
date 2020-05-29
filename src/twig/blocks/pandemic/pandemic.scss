@@ -3,6 +3,7 @@
   @include media-breakpoint-down(sm) {
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-top: -1px;
   }
   &-item{
     @include make-col-ready();
@@ -108,6 +109,10 @@
       position: absolute;
       top: -73px;
       right: -320px;
+      @include media-breakpoint-down(sm) {
+        top: 40px;
+        right: -340px;
+      }
     }
   }
 }
