@@ -31,3 +31,24 @@ a.btn{
   justify-content: center;
   text-align: center;
 }
+
+.btn-small{
+  width: 168px;
+  height: 44px;
+
+  background: #FF3D23;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: .3s;
+  &:hover{
+    color: #fff;
+  }
+}
+
+a.btn-small{
+  display: inline-block;
+  line-height: 44px;
+  text-align: center;
+}
