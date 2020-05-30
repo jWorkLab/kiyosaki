@@ -132,12 +132,14 @@
           //border-bottom: 3px solid #fbd837;
         }
         &.error{
-          border: 3px solid #e14a39;
-          color: #e14a39;
+          border: 1px solid #FF3D23;
+          color: #FF3D23;
+          background: url("/src/img/design/icons/form/error.svg") no-repeat;
+          background-position: 90% 30px;
         }
         &.valid{
-          //background: url("/src/img/design/icons/form/valid.svg") no-repeat;
-          //background-position: 90% 40px;
+          background: url("/src/img/design/icons/form/valid.svg") no-repeat;
+          background-position: 90% 30px;
           //border: 3px solid #f7f5f5;
         }
       }
@@ -153,6 +155,10 @@
     width: 100%;
     margin: 25px auto 0;
   }
+}
+
+label.error{
+  font-size: 0!important;
 }
 
 
@@ -235,5 +241,19 @@ label.error{
   transition: .3s;
   &:hover{
     transform: rotate(180deg);
+  }
+}
+
+.icr-label{
+  //display: flex;
+  //.icr-text{
+  //  padding-top: 3px;
+  //  padding-left: 5px;
+  //}
+}
+
+.icr-text{
+  @include media-breakpoint-down(xs) {
+    font-size: 10px;
   }
 }
