@@ -119,6 +119,9 @@
           margin-bottom: 20px;
           font-size: 20px;
         }
+        b{
+          font-weight: 500;
+        }
         br{
           @include media-breakpoint-down(md) {
             display: none;
@@ -139,7 +142,7 @@
   &-online{
     position: absolute;
     right: -150px;
-    top: 200px;
+    top: 100px;
     @include media-breakpoint-down(lg) {
       display: none;
     }
