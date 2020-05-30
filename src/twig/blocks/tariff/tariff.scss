@@ -97,6 +97,7 @@
         }
         @include media-breakpoint-down(sm) {
           padding: 10px 10px;
+          font-size: 14px;
         }
       }
       td{
@@ -188,6 +189,7 @@
   position: relative;
   @include media-breakpoint-down(sm) {
     text-align: left;
+    padding-left: 5px;
   }
   &__label{
     display: inline;

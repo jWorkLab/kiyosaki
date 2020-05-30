@@ -5976,6 +5976,8 @@ label.error {
 }
 @media (max-width: 767.98px) {
     .tariff-table table th {
+        font-size: 14px; 
+
         padding: 10px 10px;
     }
 }
@@ -6086,6 +6088,8 @@ label.error {
 }
 @media (max-width: 767.98px) {
     .tariff-table-label {
+        padding-left: 5px; 
+
         text-align: left;
     }
 }
