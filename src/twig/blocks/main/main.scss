@@ -91,6 +91,7 @@
         width: 100%;
       }
       img{
+        width: 197px;
         opacity: 0;
         margin-left: -25px;
         @include media-breakpoint-down(sm) {

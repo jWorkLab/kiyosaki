@@ -5590,6 +5590,7 @@ label.error {
     }
 }
 .main-book-img img {
+    width: 197px;
     margin-left: -25px; 
 
     opacity: 0;
