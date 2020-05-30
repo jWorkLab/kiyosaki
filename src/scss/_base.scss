@@ -111,16 +111,22 @@ a{
 }
 
 .md-hidden{
+  display: inline-block;
+  margin: 0 3px;
   @include media-breakpoint-down(md) {
     display: none;
   }
 }
 .sm-hidden{
+  display: inline-block;
+  margin: 0 3px;
   @include media-breakpoint-down(sm) {
     display: none;
   }
 }
 .xs-hidden{
+  display: inline-block;
+  margin: 0 3px;
   @include media-breakpoint-down(xs) {
     display: none;
   }
