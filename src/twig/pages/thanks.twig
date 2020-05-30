@@ -1,0 +1,72 @@
+{% extends "../layout/base_layout.twig" %}
+
+{% block content %}
+
+    <main class="main">
+        {% include '../common/header/header.twig' %}
+        <div class="container container-main">
+            <div class="row">
+                <div class="main-text">
+                    <h1 class="main-text-title main-text-title--thanks">
+                        <!-- /.main-text-title__author -->
+                        <span class="main-text-title__theses">
+                        оставлся всего<br>
+                        <span class="section-header__line section-header__line--left section-header__line--no-margin-left section-header__line--main"></span>
+                            <!-- /.section-header__line -->
+                        один шаг
+                    </span>
+                        <!-- /.main-text-title__theses -->
+                    </h1>
+                    <!-- /.main-text-title -->
+                    <div class="main-book">
+                        <div class="main-book-img">
+                            <img src="/src/img/design/images/book2.png" alt="img">
+                        </div>
+                        <!-- /.main-book-img -->
+                        <div class="main-thanks-text">
+                            <div class="main-social">
+                                <div class="main-social__title">
+                                    Следите за новостями<br>
+                                    в наших социальных сетях
+                                </div>
+                                <!-- /.main-social__title -->
+                                <div class="main-social__links">
+                                    <a target="_blank" href="#"><img src="/src/img/design/icons/fb.svg" alt="img"></a>
+                                    <a target="_blank" href="#"><img src="/src/img/design/icons/insta.svg" alt="img"></a>
+                                </div>
+                                <!-- /.main-social__links -->
+                            </div>
+                            <!-- /.main-social -->
+                            <a href="index.html#tariff"class="btn">
+                                купить билет
+                            </a>
+                            <!-- /.btn -->
+                        </div>
+                        <!-- /.main-thanks-text -->
+                    </div>
+                    <!-- /.main-book -->
+                </div>
+                <!-- /.main-text -->
+            </div>
+            <!-- /.row -->
+            <div class="main-online">
+                <div class="main-online__text">
+                    online
+                </div>
+                <!-- /.main-online__text -->
+            </div>
+            <!-- /.main-online -->
+        </div>
+        <!-- /.container -->
+    </main>
+    <!-- /.main -->
+
+    <div class="main-desktop-book">
+        <div class="container">
+            <img src="/src/img/design/images/book.png" alt="img">
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.main-desktop-book -->
+
+{% endblock %}

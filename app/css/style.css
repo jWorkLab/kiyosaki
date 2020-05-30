@@ -4479,7 +4479,8 @@ a:hover {
     height: 95px;
     padding: 0 60px;
 
-    transition: .3s; 
+    transition: .3s;
+    text-transform: uppercase; 
 
     color: #fff;
     background: #ff3d23;
@@ -5437,6 +5438,9 @@ label.error {
         margin-bottom: 5px;
     }
 }
+.main-text-title--thanks {
+    padding-top: 50px;
+}
 .main-text-title__author {
     font-size: 46px;
     font-weight: 400;
@@ -5685,6 +5689,58 @@ label.error {
     .main-desktop-book img {
         left: -200px;
     }
+}
+
+.main-thanks-text {
+    padding-top: 80px;
+    padding-left: 230px;
+}
+@media (max-width: 991.98px) {
+    .main-thanks-text {
+        padding-left: 150px;
+    }
+}
+@media (max-width: 767.98px) {
+    .main-thanks-text {
+        padding-top: 10px;
+        padding-bottom: 30px; 
+        padding-left: 0;
+    }
+}
+
+.main-social {
+    margin-bottom: 57px;
+}
+@media (max-width: 767.98px) {
+    .main-social {
+        margin-bottom: 30px;
+    }
+}
+.main-social__title {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.39;
+
+    margin-bottom: 15px; 
+
+    color: #2e2928;
+}
+@media (max-width: 767.98px) {
+    .main-social__title {
+        font-size: 18px; 
+
+        color: #fff;
+    }
+}
+.main-social__links a {
+    display: inline-block;
+
+    margin-right: 5px;
+
+    transition: .3s;
+}
+.main-social__links a:hover {
+    opacity: .7;
 }
 
 .partners {

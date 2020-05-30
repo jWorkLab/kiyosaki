@@ -132,3 +132,126 @@ var akcia_interval = setInterval(timer, 1);
 $("input[type='checkbox']").ionCheckRadio();
 
 
+//Отправка письма
+jQuery.validator.addMethod("digits", function(value, element) {
+    return this.optional(element) || /^(\+?\d+)?\s*(\(\d+\))?[\s-]*([\d-]*)$/i.test(value);
+});
+
+jQuery.validator.addMethod("letters", function(value, element) {
+    return this.optional(element) || /^[а-яА-ЯёЁa-zA-Z_\s]+$/i.test(value);
+});
+
+// $(document).ready(function() {
+//     $.validator.methods.email = function( value, element ) {
+//         return this.optional( element ) || /[a-z0-9]+@[a-z0-9]+\.[a-z0-9]+/.test( value );
+//     };
+//     $.validator.addMethod("accept", function(value, element, param) {
+//         return value.match(new RegExp("." + param + "$"));
+//     });
+//     $(".payment-form").validate({
+//         rules: {
+//             name: {
+//                 required: true,
+//                 accept: "[а-яА-Я' ']+"
+//             },
+//             email: {
+//                 required: true,
+//                 email: true
+//             },
+//             phone: {
+//                 required: true,
+//                 minlength: 11,
+//                 accept: "[0-9]+"
+//             }
+//         },
+//         messages: {
+//             name: "В имени допущена ошибка",
+//             email: "E-mail введен некорректно",
+//             phone: "В номере телефона ошибка"
+//         }
+//     });
+// });
+
+$("form").each(function(){
+    $.validator.methods.email = function( value, element ) {
+        return this.optional( element ) || /[a-z0-9]+@[a-z0-9]+\.[a-z0-9]+/.test( value );
+    };
+    $.validator.addMethod("accept", function(value, element, param) {
+        return value.match(new RegExp("." + param + "$"));
+    });
+    $(this).validate({
+        rules: {
+            name: {
+                required: true,
+                accept: "[а-яА-Я' ']+"
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            phone: {
+                required: true,
+                minlength: 11,
+                accept: "[0-9]+"
+            }
+        },
+        messages: {
+            name: "Заполните поле корректно",
+            email: "Заполните поле корректно",
+            phone: "Заполните поле корректно"
+        },
+
+        // errorPlacement: function(error, element) {
+        //     return true;
+        // },
+        submitHandler: function(form) {
+            var action = $(form).attr('action'),
+                post = $(form).serializeArray()
+            // sendmessage_text='Идет регистрация...';
+            $.ajax({
+                url: action,
+                type: 'post',
+                data: post,
+                dataType: 'json',
+                beforeSend: function() {
+                    $('.loader').addClass('active');
+                },
+                success: function(data) {
+                    if(data.location) {
+                        window.location.href=data.location;
+                    }
+                },
+                complete: function() {
+                    $('.loader').removeClass('active');
+                }
+            });
+        }
+    })
+
+});
+
+var maskList = $.masksSort($.masksLoad("js/phone-codes.json"), ['#'], /[0-9]|#/, "mask");
+
+var maskOpts = {
+    inputmask: {
+        definitions: {
+            '#': {
+                validator: "[0-9]",
+                cardinality: 1
+            }
+        },
+        //clearIncomplete: true,
+        showMaskOnHover: true,
+        autoUnmask: true
+    },
+    match: /[0-9]/,
+    replace: '#',
+    list: maskList,
+    listKey: "mask",
+    onMaskChange: function(maskObj, completed) {
+        $(this).attr("placeholder", $(this).inputmask("getemptymask"));
+    }
+};
+$('input[name=phone]').inputmasks(maskOpts).val('7');
+
+
