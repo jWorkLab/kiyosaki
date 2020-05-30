@@ -92,7 +92,7 @@
       }
       img{
         opacity: 0;
-        margin-left: -10px;
+        margin-left: -25px;
         @include media-breakpoint-down(sm) {
           opacity: 1;
         }
