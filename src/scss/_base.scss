@@ -132,6 +132,27 @@ a{
   }
 }
 
+.loader {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+
+  //display: flex;
+  display: none;
+
+  width: 100%;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, .8);
+}
+.loader__gif {
+  margin: auto;
+}
+.loader.active {
+  display: flex;
+}
+
 //.md-opacity{
 //  @include media-breakpoint-down(md) {
 //    opacity: 0;
