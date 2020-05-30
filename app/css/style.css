@@ -6462,7 +6462,7 @@ label.error {
 .invite-pattern-img:before {
     position: absolute;
     right: -110px; 
-    bottom: -86px;
+    bottom: -89px;
 
     content: url('../img/design/elements/pattern-invite.svg');
 }
