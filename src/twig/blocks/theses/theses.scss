@@ -99,4 +99,20 @@
       }
     }
   }
+  &-pattern2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 0;
+    &-img{
+      position: relative;
+      &:before{
+        content: url("/src/img/design/elements/pattern-invite.svg");
+        position: absolute;
+        top: -115px;
+        right: -110px;
+      }
+    }
+  }
 }

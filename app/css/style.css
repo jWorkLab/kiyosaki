@@ -6347,8 +6347,28 @@ label.error {
 
     content: url('../img/design/elements/pattern-theses.svg');
 }
+.theses-pattern2 {
+    position: absolute;
+    z-index: 0; 
+    top: 0;
+    right: 0;
+
+    width: 100%;
+}
+.theses-pattern2-img {
+    position: relative;
+}
+.theses-pattern2-img:before {
+    position: absolute;
+    top: -115px;
+    right: -110px; 
+
+    content: url('../img/design/elements/pattern-invite.svg');
+}
 
 .invite {
+    position: relative;
+
     padding-top: 10px;
     padding-bottom: 25px;
 }
@@ -6423,6 +6443,24 @@ label.error {
     .invite-action-counter {
         width: 100%;
     }
+}
+.invite-pattern {
+    position: absolute;
+    z-index: 0; 
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+}
+.invite-pattern-img {
+    position: relative;
+}
+.invite-pattern-img:before {
+    position: absolute;
+    right: -110px; 
+    bottom: -86px;
+
+    content: url('../img/design/elements/pattern-invite.svg');
 }
 
 .about {

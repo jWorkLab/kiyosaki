@@ -1,4 +1,5 @@
 .invite{
+  position: relative;
   padding-top: 10px;
   padding-bottom: 25px;
   @include media-breakpoint-down(lg) {
@@ -54,6 +55,22 @@
     &-counter{
       @include media-breakpoint-down(xs) {
         width: 100%;
+      }
+    }
+  }
+  &-pattern{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 0;
+    &-img{
+      position: relative;
+      &:before{
+        content: url("/src/img/design/elements/pattern-invite.svg");
+        position: absolute;
+        bottom: -86px;
+        right: -110px;
       }
     }
   }
