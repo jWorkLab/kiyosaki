@@ -42,13 +42,19 @@
     @include media-breakpoint-down(xs) {
       @include make-col(12);
     }
-    &-item{
+    &-col{
       @include make-col-ready();
       @include make-col(6);
+      @include media-breakpoint-down(sm) {
+        @include make-col(12);
+      }
+    }
+    &-item{
+      //@include make-col-ready();
+      //@include make-col(6);
       margin-bottom: 71px;
       display: flex;
       @include media-breakpoint-down(sm) {
-        @include make-col(12);
         margin-bottom: 40px;
       }
       &__num{

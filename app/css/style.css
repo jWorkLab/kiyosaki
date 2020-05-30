@@ -6792,25 +6792,31 @@ label.error {
         flex: 0 0 100%;
     }
 }
-.program-content-item {
+.program-content-col {
     position: relative;
 
-    display: flex; 
-
     width: 100%;
-    max-width: 50%;
-    margin-bottom: 71px;
+    max-width: 50%; 
     padding-right: 10px;
     padding-left: 10px;
 
     flex: 0 0 50%;
 }
 @media (max-width: 767.98px) {
-    .program-content-item {
-        max-width: 100%;
-        margin-bottom: 40px; 
+    .program-content-col {
+        max-width: 100%; 
 
         flex: 0 0 100%;
+    }
+}
+.program-content-item {
+    display: flex; 
+
+    margin-bottom: 71px;
+}
+@media (max-width: 767.98px) {
+    .program-content-item {
+        margin-bottom: 40px;
     }
 }
 .program-content-item__num {
