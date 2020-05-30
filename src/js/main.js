@@ -256,7 +256,7 @@ var maskOpts = {
 $('input[name=phone]').inputmasks(maskOpts).val('7');
 
 $(document).ready(function() {
-    $('a[href^="#"]').click(function(){
+    $('.scrollto').click(function(){
         var target = $(this).attr('href');
         $('html, body').animate({scrollTop: $(target).offset().top}, 1000);
         return false;
