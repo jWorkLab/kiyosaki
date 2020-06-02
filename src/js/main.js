@@ -67,6 +67,7 @@ $(document).ready(function(){
         }
     });
 
+
     partnersSlider.on('changed.owl.carousel', function(event) {
         var items     = event.item.count;
         var item      = event.item.index;
