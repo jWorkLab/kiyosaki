@@ -83,7 +83,7 @@ $(document).ready(function(){
 
 });
 
-var day_z = new Date("29 June 2020 00:01"); // January, February, March, April, May, June, July, August, September, October, November, December
+var day_z = new Date("5 June 2020 00:00"); // January, February, March, April, May, June, July, August, September, October, November, December
 
 function timer() {
     var time_now = new Date(),
