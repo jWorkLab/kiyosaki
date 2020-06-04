@@ -4852,7 +4852,7 @@ a.btn-small {
     overflow: hidden; 
 
     min-height: 255px;
-    padding: 89px 0 26px;
+    padding: 40px 0 26px;
 }
 @media (max-width: 767.98px) {
     .footer {
@@ -5523,6 +5523,7 @@ label.error {
     bottom: 110px;
 
     display: none;
+    overflow: hidden; 
 
     width: 420px;
     padding: 30px 30px;
@@ -5530,7 +5531,7 @@ label.error {
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
-            user-select: none; 
+            user-select: none;
     text-align: center;
 
     border-radius: 10px;
@@ -5539,16 +5540,21 @@ label.error {
 }
 @media (max-width: 575.98px) {
     .callme-form {
-        right: 50%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
 
-        width: 320px;
+        width: 100%;
 
-        -webkit-transform: translateX(50%);
-                transform: translateX(50%);
+        border-radius: 0;
     }
 }
 .callme-form.active {
     display: block;
+}
+.callme-form-wrap {
+    margin: -70px 0 -90px;
 }
 .callme-form__title {
     font-size: 26px;
@@ -5588,8 +5594,25 @@ label.error {
     }
 }
 
+.callme-form-close {
+    position: absolute;
+    top: 20px;
+    right: 20px; 
+
+    width: 20px;
+    height: 20px;
+
+    background: url('../img/design/icons/close.svg') center no-repeat;
+}
+
 #ltBlock694709769 .lt-block-wrapper {
     padding-top: 40px !important;
+}
+
+@media (max-width: 575.98px) {
+    .f-header.f-header-26 {
+        font-size: 20px !important;
+    }
 }
 
 .main {

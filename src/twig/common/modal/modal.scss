@@ -287,13 +287,24 @@ label.error{
   text-align: center;
   display: none;
   user-select: none;
+  overflow: hidden;
   @include media-breakpoint-down(xs) {
-    width: 320px;
-    right: 50%;
-    transform: translateX(50%);
+    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    border-radius: 0;
+    //transform: translateX(50%);
   }
   &.active{
     display: block;
+  }
+  &-wrap{
+    margin: -70px 0 -90px;
+    @include media-breakpoint-down(xs) {
+      //margin-top: -60px;
+    }
   }
   &__title{
     font-weight: 500;
@@ -333,6 +344,21 @@ label.error{
   }
 }
 
+.callme-form-close{
+  width: 20px;
+  height: 20px;
+  background: url("/src/img/design/icons/close.svg") center no-repeat;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 #ltBlock694709769 .lt-block-wrapper{
   padding-top:40px!important;
+}
+
+.f-header.f-header-26{
+  @include media-breakpoint-down(xs) {
+    font-size: 20px!important;
+  }
 }

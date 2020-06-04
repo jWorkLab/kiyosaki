@@ -270,6 +270,9 @@ $(document).ready(function() {
     $('.callme-button').on('click', function () {
         $('.callme-form').toggleClass('active');
     });
+    $('.callme-form-close').on('click', function () {
+        $('.callme-form').removeClass('active');
+    });
     $(document).mouseup(function (e){ // событие клика по веб-документу
         var div = $(".callme-form"); // тут указываем ID элемента
         if (!div.is(e.target) // если клик был не по нашему блоку
